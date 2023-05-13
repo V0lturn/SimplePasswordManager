@@ -13,3 +13,18 @@ BankCard::BankCard(System::String^ _CardNumber, System::String^ _ExpirationDate,
 	ExpirationDate = _ExpirationDate;
 	CVV = _CVV;
 }
+
+System::String^ BankCard::GetCardNumber()				// реалізація аксесора для отримання номера карти
+{
+	return CardNumber;
+}
+
+System::String^ BankCard::GetExpirationDate()			// реалізація аксесора для отримання терміну дії карти
+{
+	return ExpirationDate;
+}
+
+System::String^ BankCard::GetCVV()						// реалізація аксесора для отримання CVV карти
+{
+	return CVV;
+}
