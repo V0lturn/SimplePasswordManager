@@ -1,4 +1,5 @@
 #pragma once
+#include "General.h"
 
 namespace KhomychLr14TxPrZSGr22 {
 
@@ -38,26 +39,9 @@ namespace KhomychLr14TxPrZSGr22 {
 	protected:
 	private: System::Windows::Forms::TabPage^ tabPage1;
 	private: System::Windows::Forms::TabPage^ tabPage2;
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^ label1;
-
-
 	private: System::Windows::Forms::Button^ button4;
-
-
-
-
-
-
 	private: System::Windows::Forms::Label^ label4;
-
-
 	private: System::Windows::Forms::Label^ label7;
 	private: System::Windows::Forms::Label^ label6;
 	private: System::Windows::Forms::Label^ label5;
@@ -76,19 +60,12 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::TextBox^ textBox3;
 
-
-
-
-
 	protected:
-
-
-
 	private:
 		/// <summary>
 		/// Обязательная переменная конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -99,18 +76,17 @@ namespace KhomychLr14TxPrZSGr22 {
 		{
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
-			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
-			this->button4 = (gcnew System::Windows::Forms::Button());
-			this->label4 = (gcnew System::Windows::Forms::Label());
-			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
-			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
-			this->label2 = (gcnew System::Windows::Forms::Label());
-			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
-			this->label5 = (gcnew System::Windows::Forms::Label());
-			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->textBox6 = (gcnew System::Windows::Forms::TextBox());
+			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->label2 = (gcnew System::Windows::Forms::Label());
+			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
+			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
+			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
@@ -119,7 +95,8 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label10 = (gcnew System::Windows::Forms::Label());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
-			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->button4 = (gcnew System::Windows::Forms::Button());
+			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -161,6 +138,85 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Авторизація";
 			// 
+			// button2
+			// 
+			this->button2->BackColor = System::Drawing::Color::PaleGreen;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button2->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button2->Location = System::Drawing::Point(63, 456);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(359, 68);
+			this->button2->TabIndex = 14;
+			this->button2->Text = L"Авторизуватись";
+			this->button2->UseVisualStyleBackColor = false;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
+			// 
+			// label7
+			// 
+			this->label7->BackColor = System::Drawing::Color::Transparent;
+			this->label7->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label7->Location = System::Drawing::Point(73, 369);
+			this->label7->Name = L"label7";
+			this->label7->Size = System::Drawing::Size(180, 32);
+			this->label7->TabIndex = 9;
+			this->label7->Text = L"Текст капчі:";
+			// 
+			// label6
+			// 
+			this->label6->BackColor = System::Drawing::Color::Transparent;
+			this->label6->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label6->Location = System::Drawing::Point(73, 206);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(130, 32);
+			this->label6->TabIndex = 8;
+			this->label6->Text = L"Пароль:";
+			// 
+			// label5
+			// 
+			this->label5->BackColor = System::Drawing::Color::Transparent;
+			this->label5->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->label5->Location = System::Drawing::Point(73, 142);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(130, 32);
+			this->label5->TabIndex = 7;
+			this->label5->Text = L"Логін:";
+			// 
+			// textBox6
+			// 
+			this->textBox6->Font = (gcnew System::Drawing::Font(L"Cambria", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox6->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->textBox6->Location = System::Drawing::Point(307, 369);
+			this->textBox6->Name = L"textBox6";
+			this->textBox6->Size = System::Drawing::Size(115, 32);
+			this->textBox6->TabIndex = 5;
+			// 
+			// button1
+			// 
+			this->button1->BackColor = System::Drawing::Color::PaleGreen;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Cambria", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button1->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button1->Location = System::Drawing::Point(294, 281);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(128, 60);
+			this->button1->TabIndex = 4;
+			this->button1->Text = L"Створити\r\nнову";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click_1);
+			// 
+			// label2
+			// 
+			this->label2->BackColor = System::Drawing::Color::LightGray;
+			this->label2->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->label2->Location = System::Drawing::Point(105, 281);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(126, 60);
+			this->label2->TabIndex = 3;
+			this->label2->Text = L"label2";
+			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
 			// label1
 			// 
 			this->label1->BackColor = System::Drawing::Color::Transparent;
@@ -173,6 +229,26 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Менеджер паролів";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// textBox5
+			// 
+			this->textBox5->Font = (gcnew System::Drawing::Font(L"Cambria", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox5->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->textBox5->Location = System::Drawing::Point(223, 206);
+			this->textBox5->Name = L"textBox5";
+			this->textBox5->Size = System::Drawing::Size(199, 32);
+			this->textBox5->TabIndex = 1;
+			// 
+			// textBox4
+			// 
+			this->textBox4->Font = (gcnew System::Drawing::Font(L"Cambria", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox4->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
+			this->textBox4->Location = System::Drawing::Point(223, 142);
+			this->textBox4->Name = L"textBox4";
+			this->textBox4->Size = System::Drawing::Size(199, 32);
+			this->textBox4->TabIndex = 0;
 			// 
 			// tabPage2
 			// 
@@ -193,116 +269,6 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage2->Size = System::Drawing::Size(478, 563);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Реєстрація";
-			// 
-			// button4
-			// 
-			this->button4->BackColor = System::Drawing::Color::PaleGreen;
-			this->button4->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button4->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button4->Location = System::Drawing::Point(63, 456);
-			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(359, 68);
-			this->button4->TabIndex = 13;
-			this->button4->Text = L"Зареєструватись";
-			this->button4->UseVisualStyleBackColor = false;
-			// 
-			// label4
-			// 
-			this->label4->BackColor = System::Drawing::Color::Transparent;
-			this->label4->Font = (gcnew System::Drawing::Font(L"Cambria", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->label4->ForeColor = System::Drawing::Color::Black;
-			this->label4->Location = System::Drawing::Point(3, 27);
-			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(472, 91);
-			this->label4->TabIndex = 9;
-			this->label4->Text = L"Менеджер паролів";
-			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// textBox4
-			// 
-			this->textBox4->Font = (gcnew System::Drawing::Font(L"Cambria", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->textBox4->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->textBox4->Location = System::Drawing::Point(223, 142);
-			this->textBox4->Name = L"textBox4";
-			this->textBox4->Size = System::Drawing::Size(199, 32);
-			this->textBox4->TabIndex = 0;
-			// 
-			// textBox5
-			// 
-			this->textBox5->Font = (gcnew System::Drawing::Font(L"Cambria", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->textBox5->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->textBox5->Location = System::Drawing::Point(223, 206);
-			this->textBox5->Name = L"textBox5";
-			this->textBox5->Size = System::Drawing::Size(199, 32);
-			this->textBox5->TabIndex = 1;
-			// 
-			// label2
-			// 
-			this->label2->BackColor = System::Drawing::Color::LightGray;
-			this->label2->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label2->Location = System::Drawing::Point(105, 281);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(126, 60);
-			this->label2->TabIndex = 3;
-			this->label2->Text = L"label2";
-			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// button1
-			// 
-			this->button1->BackColor = System::Drawing::Color::PaleGreen;
-			this->button1->Font = (gcnew System::Drawing::Font(L"Cambria", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->button1->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button1->Location = System::Drawing::Point(294, 281);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(128, 60);
-			this->button1->TabIndex = 4;
-			this->button1->Text = L"Створити\r\nнову";
-			this->button1->UseVisualStyleBackColor = false;
-			// 
-			// textBox6
-			// 
-			this->textBox6->Font = (gcnew System::Drawing::Font(L"Cambria", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->textBox6->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->textBox6->Location = System::Drawing::Point(307, 369);
-			this->textBox6->Name = L"textBox6";
-			this->textBox6->Size = System::Drawing::Size(115, 32);
-			this->textBox6->TabIndex = 5;
-			// 
-			// label5
-			// 
-			this->label5->BackColor = System::Drawing::Color::Transparent;
-			this->label5->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label5->Location = System::Drawing::Point(73, 142);
-			this->label5->Name = L"label5";
-			this->label5->Size = System::Drawing::Size(130, 32);
-			this->label5->TabIndex = 7;
-			this->label5->Text = L"Логін:";
-			// 
-			// label6
-			// 
-			this->label6->BackColor = System::Drawing::Color::Transparent;
-			this->label6->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label6->Location = System::Drawing::Point(73, 206);
-			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(130, 32);
-			this->label6->TabIndex = 8;
-			this->label6->Text = L"Пароль:";
-			// 
-			// label7
-			// 
-			this->label7->BackColor = System::Drawing::Color::Transparent;
-			this->label7->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label7->Location = System::Drawing::Point(73, 369);
-			this->label7->Name = L"label7";
-			this->label7->Size = System::Drawing::Size(180, 32);
-			this->label7->TabIndex = 9;
-			this->label7->Text = L"Текст капчі:";
 			// 
 			// label3
 			// 
@@ -388,18 +354,31 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->textBox3->Size = System::Drawing::Size(199, 32);
 			this->textBox3->TabIndex = 14;
 			// 
-			// button2
+			// button4
 			// 
-			this->button2->BackColor = System::Drawing::Color::PaleGreen;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button4->BackColor = System::Drawing::Color::PaleGreen;
+			this->button4->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->button2->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button2->Location = System::Drawing::Point(63, 456);
-			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(359, 68);
-			this->button2->TabIndex = 14;
-			this->button2->Text = L"Авторизуватись";
-			this->button2->UseVisualStyleBackColor = false;
+			this->button4->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button4->Location = System::Drawing::Point(63, 456);
+			this->button4->Name = L"button4";
+			this->button4->Size = System::Drawing::Size(359, 68);
+			this->button4->TabIndex = 13;
+			this->button4->Text = L"Зареєструватись";
+			this->button4->UseVisualStyleBackColor = false;
+			// 
+			// label4
+			// 
+			this->label4->BackColor = System::Drawing::Color::Transparent;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Cambria", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label4->ForeColor = System::Drawing::Color::Black;
+			this->label4->Location = System::Drawing::Point(3, 27);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(472, 91);
+			this->label4->TabIndex = 9;
+			this->label4->Text = L"Менеджер паролів";
+			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// MyForm
 			// 
@@ -411,6 +390,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->Name = L"MyForm";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Khomych Lab14";
+			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
@@ -420,8 +400,152 @@ namespace KhomychLr14TxPrZSGr22 {
 
 		}
 #pragma endregion
-	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+	public: void GenerateCaptcha()
+	{
+		Random^ rnd = gcnew Random();														// створення обьекту для генерації випадкових чисел
+		String^ chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";	// можливі символи
+		String^ captcha = "";
+		for (int i = 0; i < 6; i++)
+		{
+			captcha += chars[rnd->Next(0, chars->Length)];
+		}
+		label2->Text = captcha;																// виведення капчі
 	}
 
-};
+		  User^ User1 = gcnew User("kangaroo", "hT@U4852");			// створення 3 користувачів по замовчуванню
+		  User^ User2 = gcnew User("chimpanzee", "fN325@st");
+		  User^ User3 = gcnew User("goldfish", "4&D@Ju53");
+
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {		// ініціалізація даних стандартних користувачів + створення початкової капчі
+#pragma region Initialize users
+		Website^ website1 = gcnew Website("https://www.google.com/", "kAngaro0", "aaaaaaa");
+		Website^ website2 = gcnew Website("https://www.youtube.com/", "kang@roO", "BBBBBBBB");
+		Website^ website3 = gcnew Website("https://www.facebook.com/", "Kangar00", "password3");
+		Website^ website4 = gcnew Website("https://www.amazon.com/", "k@nGAr0o", "pasSword");
+		Website^ website5 = gcnew Website("https://www.wikipedia.org/", "Kang@roo", "password-");
+		Website^ website6 = gcnew Website("https://twitter.com/", "k@NgaRoo", "88888888");
+		Website^ website7 = gcnew Website("https://www.instagram.com/", "K@ng@roo", "ccccc");
+		Website^ website8 = gcnew Website("https://www.linkedin.com/", "kang@R00", "---------");
+		Website^ website9 = gcnew Website("https://www.reddit.com/", "KANGaroo", "ceKN2*wZ");
+		Website^ website10 = gcnew Website("https://www.netflix.com/", "k@ng@r00", "bhWGxBz7~{?");
+
+		User1->UserWebsites->Add(website1);
+		User1->UserWebsites->Add(website2);
+		User1->UserWebsites->Add(website3);
+		User1->UserWebsites->Add(website4);
+		User1->UserWebsites->Add(website5);
+		User1->UserWebsites->Add(website6);
+		User1->UserWebsites->Add(website7);
+		User1->UserWebsites->Add(website8);
+		User1->UserWebsites->Add(website9);
+		User1->UserWebsites->Add(website10);
+
+		Website^ website11 = gcnew Website("https://www.amazon.com/", "ch1mpanzee", "PPPPPPPP");
+		Website^ website12 = gcnew Website("https://www.facebook.com/", "chimp@nzee", "password6");
+		Website^ website13 = gcnew Website("https://www.instagram.com/", "chImp@nzee", "passwOrd");
+		Website^ website14 = gcnew Website("https://twitter.com/", "ch1mp@nz3e", "pass$word");
+		Website^ website15 = gcnew Website("https://www.linkedin.com/", "chImp@nz33", "11111111");
+		Website^ website16 = gcnew Website("https://www.reddit.com/", "ChImp@nze3", "mmmm");
+		Website^ website17 = gcnew Website("https://www.twitch.tv/", "cH1mpanz3e", ":::::::::");
+		Website^ website18 = gcnew Website("https://www.dropbox.com/", "ch1mPanz33", "2uH*J$W5ME");
+		Website^ website19 = gcnew Website("https://slack.com/", "CH1mp@nzEe", "B'wQ3!Z(");
+		Website^ website20 = gcnew Website("https://www.airbnb.com/", "chImpanzee", "kkkkkkkk");
+
+		User2->UserWebsites->Add(website11);
+		User2->UserWebsites->Add(website12);
+		User2->UserWebsites->Add(website13);
+		User2->UserWebsites->Add(website14);
+		User2->UserWebsites->Add(website15);
+		User2->UserWebsites->Add(website16);
+		User2->UserWebsites->Add(website17);
+		User2->UserWebsites->Add(website18);
+		User2->UserWebsites->Add(website19);
+		User2->UserWebsites->Add(website20);
+
+		Website^ website21 = gcnew Website("https://www.amazon.com/", "g0ldfish", "xxxxxxxx");
+		Website^ website22 = gcnew Website("https://www.facebook.com/", "goldf1sh", "2password");
+		Website^ website23 = gcnew Website("https://www.instagram.com/", "g0ldf1sh", "pAssword");
+		Website^ website24 = gcnew Website("https://twitter.com/", "Goldfish", "p@ssword");
+		Website^ website25 = gcnew Website("https://www.linkedin.com/", "G0ldfish", "44444444");
+		Website^ website26 = gcnew Website("https://www.reddit.com/", "Goldf1sh", "rrrr");
+		Website^ website27 = gcnew Website("https://www.twitch.tv/", "G0ldf1sh", "++++++++++");
+		Website^ website28 = gcnew Website("https://www.dropbox.com/", "GOLDfish", "JJJJJJJJJ");
+		Website^ website29 = gcnew Website("https://slack.com/", "goldFISH", "Yr]d('9K");
+		Website^ website30 = gcnew Website("https://www.airbnb.com/", "G0lDF1sh", "JJkt.hK6SC");
+
+		User3->UserWebsites->Add(website21);
+		User3->UserWebsites->Add(website22);
+		User3->UserWebsites->Add(website23);
+		User3->UserWebsites->Add(website24);
+		User3->UserWebsites->Add(website25);
+		User3->UserWebsites->Add(website26);
+		User3->UserWebsites->Add(website27);
+		User3->UserWebsites->Add(website28);
+		User3->UserWebsites->Add(website29);
+		User3->UserWebsites->Add(website30);
+
+		BankCard^ bankcard1 = gcnew BankCard("3956-5782-5214-7139", "25/03", "832");
+		BankCard^ bankcard2 = gcnew BankCard("5958-5867-1810-5335", "23/12", "841");
+		BankCard^ bankcard3 = gcnew BankCard("4252-8572-1049-3286", "24/05", "721");
+		BankCard^ bankcard4 = gcnew BankCard("8888-6785-1536-9882", "27/01", "212");
+		BankCard^ bankcard5 = gcnew BankCard("3658-3298-4921-0104", "28/03", "532");
+
+		User1->BankCards->Add(bankcard1);
+		User1->BankCards->Add(bankcard2);
+		User1->BankCards->Add(bankcard3);
+		User1->BankCards->Add(bankcard4);
+		User1->BankCards->Add(bankcard5);
+
+		BankCard^ bankcard6 = gcnew BankCard("8994-6510-6743-7576", "25/09", "753");
+		BankCard^ bankcard7 = gcnew BankCard("1827-1189-8638-1029", "23/10", "279");
+		BankCard^ bankcard8 = gcnew BankCard("7108-8824-1018-8410", "28/02", "703");
+		BankCard^ bankcard9 = gcnew BankCard("3847-1888-2411-8841", "26/11", "227");
+		BankCard^ bankcard10 = gcnew BankCard("4138-9769-1598-9642", "26/08", "133");
+
+		User2->BankCards->Add(bankcard6);
+		User2->BankCards->Add(bankcard7);
+		User2->BankCards->Add(bankcard8);
+		User2->BankCards->Add(bankcard9);
+		User2->BankCards->Add(bankcard10);
+
+		BankCard^ bankcard11 = gcnew BankCard("9299-2426-1945-2411", "23/09", "328");
+		BankCard^ bankcard12 = gcnew BankCard("8117-8429-1536-2545", "24/08", "456");
+		BankCard^ bankcard13 = gcnew BankCard("9884-1019-8981-1047", "28/09", "786");
+		BankCard^ bankcard14 = gcnew BankCard("9925-1395-5765-5735", "27/01", "364");
+		BankCard^ bankcard15 = gcnew BankCard("2934-2893-2116-1855", "29/05", "460");
+
+		User3->BankCards->Add(bankcard11);
+		User3->BankCards->Add(bankcard12);
+		User3->BankCards->Add(bankcard13);
+		User3->BankCards->Add(bankcard14);
+		User3->BankCards->Add(bankcard15);
+
+		GenerateCaptcha();
+#pragma endregion																			
+	}
+
+	private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {	// виведення нової капчі
+		GenerateCaptcha();																	// виклик функція для створення капчі
+	}
+
+		   List<User^>^ users = gcnew List<User^>();										// ліст усіх користувачів
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		users->Add(User1);																	// користувачі додані до лісту
+		users->Add(User2);
+		users->Add(User3);
+
+		String^ entered_login = textBox4->Text;
+		String^ entered_password = textBox5->Text;
+		String^ captcha = textBox6->Text;
+
+		for each (User^ user in users) {
+			if (user->GetLogin() == entered_login && user->GetPassword() == entered_password && label2->Text == captcha) {
+				MessageBox::Show("Ви були успішно авторизовані", "Авторизація", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				break;
+			}
+		}
+	}
+
+	};
 }
