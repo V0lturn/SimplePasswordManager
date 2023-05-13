@@ -127,6 +127,7 @@
   <ItemGroup>
     <ClInclude Include="BankCard.h" />
     <ClInclude Include="General.h" />
+    <ClInclude Include="HashFunction.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>

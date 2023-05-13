@@ -12,7 +12,17 @@ Website::Website(System::String^ _Link,System::String^ _Login, System::String^ _
 	Password = _Password;
 }
 
-System::String^ Website::GetLogin()
+System::String^ Website::GetLink()						// реалізація аксесора для отримання посилання
+{
+	return Link;
+}
+
+System::String^ Website::GetLogin()						// реалізація аксесора для отримання логіну
 {
 	return Login;
+}
+
+System::String^ Website::GetPassword()					// реалізація аксесора для отримання паролю
+{
+	return Password;
 }

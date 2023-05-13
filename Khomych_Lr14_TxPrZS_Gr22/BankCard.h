@@ -10,5 +10,9 @@ private:																	// пол€ класу
 public:																		// методи класу
 	BankCard();																// конструктор за замовчуванн€м
 	BankCard(System::String^ _CardNumber, System::String^ _ExpirationDate, System::String^ _CVV);	// конструктор з параметрами
-};
+
+	System::String^ GetCardNumber();										// аксесор дл€ отриманн€ номеру карти
+	System::String^ GetExpirationDate();									// аксесор дл€ отриманн€ терм≥ну д≥њ карти
+	System::String^ GetCVV();												// аксесор дл€ отриманн€ CVV карти
+};	
 

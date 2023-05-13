@@ -11,6 +11,8 @@ public:
 	Website();                                      // конструктор за замовчуванням
 	Website(System::String^ _Link, System::String^ _Login, System::String^ _Password);     // конструктор з параметрами
 
-	System::String^ GetLogin();
+	System::String^ GetLink();						// аксесор для отримання посилання
+	System::String^ GetLogin();						// аксесор для отримання логіну
+	System::String^ GetPassword();					// аксесор для отримання пароля
 };
 

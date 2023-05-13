@@ -1,6 +1,6 @@
 #pragma once
 #include "General.h"
-
+//#include "HashFunction.h"
 namespace KhomychLr14TxPrZSGr22 {
 
 	using namespace System;
@@ -59,6 +59,9 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Windows::Forms::Label^ label10;
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::TextBox^ textBox3;
+	private: System::Windows::Forms::SaveFileDialog^ saveFileDialog1;
+
+
 
 	protected:
 	private:
@@ -97,6 +100,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -214,7 +218,6 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(126, 60);
 			this->label2->TabIndex = 3;
-			this->label2->Text = L"label2";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label1
@@ -331,7 +334,6 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(126, 60);
 			this->label10->TabIndex = 16;
-			this->label10->Text = L"label10";
 			this->label10->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// textBox2
@@ -366,6 +368,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button4->TabIndex = 13;
 			this->button4->Text = L"Зареєструватись";
 			this->button4->UseVisualStyleBackColor = false;
+			this->button4->Click += gcnew System::EventHandler(this, &MyForm::button4_Click);
 			// 
 			// label4
 			// 
@@ -413,139 +416,165 @@ namespace KhomychLr14TxPrZSGr22 {
 		label2->Text = captcha;																// виведення капчі
 	}
 
-		  User^ User1 = gcnew User("kangaroo", "hT@U4852");			// створення 3 користувачів по замовчуванню
-		  User^ User2 = gcnew User("chimpanzee", "fN325@st");
-		  User^ User3 = gcnew User("goldfish", "4&D@Ju53");
+	User^ User1 = gcnew User("kangaroo", "hT@U4852");			// створення 3 користувачів по замовчуванню
+	User^ User2 = gcnew User("chimpanzee", "fN325@st");
+	User^ User3 = gcnew User("goldfish", "4&D@Ju53");
 
-	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {		// ініціалізація даних стандартних користувачів + створення початкової капчі
+private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {		// ініціалізація даних стандартних користувачів + створення початкової капчі
 #pragma region Initialize users
-		Website^ website1 = gcnew Website("https://www.google.com/", "kAngaro0", "aaaaaaa");
-		Website^ website2 = gcnew Website("https://www.youtube.com/", "kang@roO", "BBBBBBBB");
-		Website^ website3 = gcnew Website("https://www.facebook.com/", "Kangar00", "password3");
-		Website^ website4 = gcnew Website("https://www.amazon.com/", "k@nGAr0o", "pasSword");
-		Website^ website5 = gcnew Website("https://www.wikipedia.org/", "Kang@roo", "password-");
-		Website^ website6 = gcnew Website("https://twitter.com/", "k@NgaRoo", "88888888");
-		Website^ website7 = gcnew Website("https://www.instagram.com/", "K@ng@roo", "ccccc");
-		Website^ website8 = gcnew Website("https://www.linkedin.com/", "kang@R00", "---------");
-		Website^ website9 = gcnew Website("https://www.reddit.com/", "KANGaroo", "ceKN2*wZ");
-		Website^ website10 = gcnew Website("https://www.netflix.com/", "k@ng@r00", "bhWGxBz7~{?");
+	Website^ website1 = gcnew Website("https://www.google.com/", "kAngaro0", "aaaaaaa");
+	Website^ website2 = gcnew Website("https://www.youtube.com/", "kang@roO", "BBBBBBBB");
+	Website^ website3 = gcnew Website("https://www.facebook.com/", "Kangar00", "password3");
+	Website^ website4 = gcnew Website("https://www.amazon.com/", "k@nGAr0o", "pasSword");
+	Website^ website5 = gcnew Website("https://www.wikipedia.org/", "Kang@roo", "password-");
+	Website^ website6 = gcnew Website("https://twitter.com/", "k@NgaRoo", "88888888");
+	Website^ website7 = gcnew Website("https://www.instagram.com/", "K@ng@roo", "ccccc");
+	Website^ website8 = gcnew Website("https://www.linkedin.com/", "kang@R00", "---------");
+	Website^ website9 = gcnew Website("https://www.reddit.com/", "KANGaroo", "ceKN2*wZ");
+	Website^ website10 = gcnew Website("https://www.netflix.com/", "k@ng@r00", "bhWGxBz7~{?");
 
-		User1->UserWebsites->Add(website1);
-		User1->UserWebsites->Add(website2);
-		User1->UserWebsites->Add(website3);
-		User1->UserWebsites->Add(website4);
-		User1->UserWebsites->Add(website5);
-		User1->UserWebsites->Add(website6);
-		User1->UserWebsites->Add(website7);
-		User1->UserWebsites->Add(website8);
-		User1->UserWebsites->Add(website9);
-		User1->UserWebsites->Add(website10);
+	User1->UserWebsites->Add(website1);
+	User1->UserWebsites->Add(website2);
+	User1->UserWebsites->Add(website3);
+	User1->UserWebsites->Add(website4);
+	User1->UserWebsites->Add(website5);
+	User1->UserWebsites->Add(website6);
+	User1->UserWebsites->Add(website7);
+	User1->UserWebsites->Add(website8);
+	User1->UserWebsites->Add(website9);
+	User1->UserWebsites->Add(website10);
 
-		Website^ website11 = gcnew Website("https://www.amazon.com/", "ch1mpanzee", "PPPPPPPP");
-		Website^ website12 = gcnew Website("https://www.facebook.com/", "chimp@nzee", "password6");
-		Website^ website13 = gcnew Website("https://www.instagram.com/", "chImp@nzee", "passwOrd");
-		Website^ website14 = gcnew Website("https://twitter.com/", "ch1mp@nz3e", "pass$word");
-		Website^ website15 = gcnew Website("https://www.linkedin.com/", "chImp@nz33", "11111111");
-		Website^ website16 = gcnew Website("https://www.reddit.com/", "ChImp@nze3", "mmmm");
-		Website^ website17 = gcnew Website("https://www.twitch.tv/", "cH1mpanz3e", ":::::::::");
-		Website^ website18 = gcnew Website("https://www.dropbox.com/", "ch1mPanz33", "2uH*J$W5ME");
-		Website^ website19 = gcnew Website("https://slack.com/", "CH1mp@nzEe", "B'wQ3!Z(");
-		Website^ website20 = gcnew Website("https://www.airbnb.com/", "chImpanzee", "kkkkkkkk");
+	Website^ website11 = gcnew Website("https://www.amazon.com/", "ch1mpanzee", "PPPPPPPP");
+	Website^ website12 = gcnew Website("https://www.facebook.com/", "chimp@nzee", "password6");
+	Website^ website13 = gcnew Website("https://www.instagram.com/", "chImp@nzee", "passwOrd");
+	Website^ website14 = gcnew Website("https://twitter.com/", "ch1mp@nz3e", "pass$word");
+	Website^ website15 = gcnew Website("https://www.linkedin.com/", "chImp@nz33", "11111111");
+	Website^ website16 = gcnew Website("https://www.reddit.com/", "ChImp@nze3", "mmmm");
+	Website^ website17 = gcnew Website("https://www.twitch.tv/", "cH1mpanz3e", ":::::::::");
+	Website^ website18 = gcnew Website("https://www.dropbox.com/", "ch1mPanz33", "2uH*J$W5ME");
+	Website^ website19 = gcnew Website("https://slack.com/", "CH1mp@nzEe", "B'wQ3!Z(");
+	Website^ website20 = gcnew Website("https://www.airbnb.com/", "chImpanzee", "kkkkkkkk");
 
-		User2->UserWebsites->Add(website11);
-		User2->UserWebsites->Add(website12);
-		User2->UserWebsites->Add(website13);
-		User2->UserWebsites->Add(website14);
-		User2->UserWebsites->Add(website15);
-		User2->UserWebsites->Add(website16);
-		User2->UserWebsites->Add(website17);
-		User2->UserWebsites->Add(website18);
-		User2->UserWebsites->Add(website19);
-		User2->UserWebsites->Add(website20);
+	User2->UserWebsites->Add(website11);
+	User2->UserWebsites->Add(website12);
+	User2->UserWebsites->Add(website13);
+	User2->UserWebsites->Add(website14);
+	User2->UserWebsites->Add(website15);
+	User2->UserWebsites->Add(website16);
+	User2->UserWebsites->Add(website17);
+	User2->UserWebsites->Add(website18);
+	User2->UserWebsites->Add(website19);
+	User2->UserWebsites->Add(website20);
 
-		Website^ website21 = gcnew Website("https://www.amazon.com/", "g0ldfish", "xxxxxxxx");
-		Website^ website22 = gcnew Website("https://www.facebook.com/", "goldf1sh", "2password");
-		Website^ website23 = gcnew Website("https://www.instagram.com/", "g0ldf1sh", "pAssword");
-		Website^ website24 = gcnew Website("https://twitter.com/", "Goldfish", "p@ssword");
-		Website^ website25 = gcnew Website("https://www.linkedin.com/", "G0ldfish", "44444444");
-		Website^ website26 = gcnew Website("https://www.reddit.com/", "Goldf1sh", "rrrr");
-		Website^ website27 = gcnew Website("https://www.twitch.tv/", "G0ldf1sh", "++++++++++");
-		Website^ website28 = gcnew Website("https://www.dropbox.com/", "GOLDfish", "JJJJJJJJJ");
-		Website^ website29 = gcnew Website("https://slack.com/", "goldFISH", "Yr]d('9K");
-		Website^ website30 = gcnew Website("https://www.airbnb.com/", "G0lDF1sh", "JJkt.hK6SC");
+	Website^ website21 = gcnew Website("https://www.amazon.com/", "g0ldfish", "xxxxxxxx");
+	Website^ website22 = gcnew Website("https://www.facebook.com/", "goldf1sh", "2password");
+	Website^ website23 = gcnew Website("https://www.instagram.com/", "g0ldf1sh", "pAssword");
+	Website^ website24 = gcnew Website("https://twitter.com/", "Goldfish", "p@ssword");
+	Website^ website25 = gcnew Website("https://www.linkedin.com/", "G0ldfish", "44444444");
+	Website^ website26 = gcnew Website("https://www.reddit.com/", "Goldf1sh", "rrrr");
+	Website^ website27 = gcnew Website("https://www.twitch.tv/", "G0ldf1sh", "++++++++++");
+	Website^ website28 = gcnew Website("https://www.dropbox.com/", "GOLDfish", "JJJJJJJJJ");
+	Website^ website29 = gcnew Website("https://slack.com/", "goldFISH", "Yr]d('9K");
+	Website^ website30 = gcnew Website("https://www.airbnb.com/", "G0lDF1sh", "JJkt.hK6SC");
 
-		User3->UserWebsites->Add(website21);
-		User3->UserWebsites->Add(website22);
-		User3->UserWebsites->Add(website23);
-		User3->UserWebsites->Add(website24);
-		User3->UserWebsites->Add(website25);
-		User3->UserWebsites->Add(website26);
-		User3->UserWebsites->Add(website27);
-		User3->UserWebsites->Add(website28);
-		User3->UserWebsites->Add(website29);
-		User3->UserWebsites->Add(website30);
+	User3->UserWebsites->Add(website21);
+	User3->UserWebsites->Add(website22);
+	User3->UserWebsites->Add(website23);
+	User3->UserWebsites->Add(website24);
+	User3->UserWebsites->Add(website25);
+	User3->UserWebsites->Add(website26);
+	User3->UserWebsites->Add(website27);
+	User3->UserWebsites->Add(website28);
+	User3->UserWebsites->Add(website29);
+	User3->UserWebsites->Add(website30);
 
-		BankCard^ bankcard1 = gcnew BankCard("3956-5782-5214-7139", "25/03", "832");
-		BankCard^ bankcard2 = gcnew BankCard("5958-5867-1810-5335", "23/12", "841");
-		BankCard^ bankcard3 = gcnew BankCard("4252-8572-1049-3286", "24/05", "721");
-		BankCard^ bankcard4 = gcnew BankCard("8888-6785-1536-9882", "27/01", "212");
-		BankCard^ bankcard5 = gcnew BankCard("3658-3298-4921-0104", "28/03", "532");
+	BankCard^ bankcard1 = gcnew BankCard("3956-5782-5214-7139", "25/03", "832");
+	BankCard^ bankcard2 = gcnew BankCard("5958-5867-1810-5335", "23/12", "841");
+	BankCard^ bankcard3 = gcnew BankCard("4252-8572-1049-3286", "24/05", "721");
+	BankCard^ bankcard4 = gcnew BankCard("8888-6785-1536-9882", "27/01", "212");
+	BankCard^ bankcard5 = gcnew BankCard("3658-3298-4921-0104", "28/03", "532");
 
-		User1->BankCards->Add(bankcard1);
-		User1->BankCards->Add(bankcard2);
-		User1->BankCards->Add(bankcard3);
-		User1->BankCards->Add(bankcard4);
-		User1->BankCards->Add(bankcard5);
+	User1->UsersBankCards->Add(bankcard1);
+	User1->UsersBankCards->Add(bankcard2);
+	User1->UsersBankCards->Add(bankcard3);
+	User1->UsersBankCards->Add(bankcard4);
+	User1->UsersBankCards->Add(bankcard5);
 
-		BankCard^ bankcard6 = gcnew BankCard("8994-6510-6743-7576", "25/09", "753");
-		BankCard^ bankcard7 = gcnew BankCard("1827-1189-8638-1029", "23/10", "279");
-		BankCard^ bankcard8 = gcnew BankCard("7108-8824-1018-8410", "28/02", "703");
-		BankCard^ bankcard9 = gcnew BankCard("3847-1888-2411-8841", "26/11", "227");
-		BankCard^ bankcard10 = gcnew BankCard("4138-9769-1598-9642", "26/08", "133");
+	BankCard^ bankcard6 = gcnew BankCard("8994-6510-6743-7576", "25/09", "753");
+	BankCard^ bankcard7 = gcnew BankCard("1827-1189-8638-1029", "23/10", "279");
+	BankCard^ bankcard8 = gcnew BankCard("7108-8824-1018-8410", "28/02", "703");
+	BankCard^ bankcard9 = gcnew BankCard("3847-1888-2411-8841", "26/11", "227");
+	BankCard^ bankcard10 = gcnew BankCard("4138-9769-1598-9642", "26/08", "133");
 
-		User2->BankCards->Add(bankcard6);
-		User2->BankCards->Add(bankcard7);
-		User2->BankCards->Add(bankcard8);
-		User2->BankCards->Add(bankcard9);
-		User2->BankCards->Add(bankcard10);
+	User2->UsersBankCards->Add(bankcard6);
+	User2->UsersBankCards->Add(bankcard7);
+	User2->UsersBankCards->Add(bankcard8);
+	User2->UsersBankCards->Add(bankcard9);
+	User2->UsersBankCards->Add(bankcard10);
 
-		BankCard^ bankcard11 = gcnew BankCard("9299-2426-1945-2411", "23/09", "328");
-		BankCard^ bankcard12 = gcnew BankCard("8117-8429-1536-2545", "24/08", "456");
-		BankCard^ bankcard13 = gcnew BankCard("9884-1019-8981-1047", "28/09", "786");
-		BankCard^ bankcard14 = gcnew BankCard("9925-1395-5765-5735", "27/01", "364");
-		BankCard^ bankcard15 = gcnew BankCard("2934-2893-2116-1855", "29/05", "460");
+	BankCard^ bankcard11 = gcnew BankCard("9299-2426-1945-2411", "23/09", "328");
+	BankCard^ bankcard12 = gcnew BankCard("8117-8429-1536-2545", "24/08", "456");
+	BankCard^ bankcard13 = gcnew BankCard("9884-1019-8981-1047", "28/09", "786");
+	BankCard^ bankcard14 = gcnew BankCard("9925-1395-5765-5735", "27/01", "364");
+	BankCard^ bankcard15 = gcnew BankCard("2934-2893-2116-1855", "29/05", "460");
 
-		User3->BankCards->Add(bankcard11);
-		User3->BankCards->Add(bankcard12);
-		User3->BankCards->Add(bankcard13);
-		User3->BankCards->Add(bankcard14);
-		User3->BankCards->Add(bankcard15);
+	User3->UsersBankCards->Add(bankcard11);
+	User3->UsersBankCards->Add(bankcard12);
+	User3->UsersBankCards->Add(bankcard13);
+	User3->UsersBankCards->Add(bankcard14);
+	User3->UsersBankCards->Add(bankcard15);
 
-		GenerateCaptcha();
+	GenerateCaptcha();
 #pragma endregion																			
-	}
+}
 
-	private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {	// виведення нової капчі
-		GenerateCaptcha();																	// виклик функція для створення капчі
-	}
+private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {	// виведення нової капчі
+	GenerateCaptcha();																	// виклик функція для створення капчі
+}
 
-		   List<User^>^ users = gcnew List<User^>();										// ліст усіх користувачів
-	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	   List<User^>^ users = gcnew List<User^>();										// ліст усіх користувачів
+	   User^ FoundUser;																	// зміна за залогованого корстувача
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	try {
 		users->Add(User1);																	// користувачі додані до лісту
 		users->Add(User2);
 		users->Add(User3);
 
-		String^ entered_login = textBox4->Text;
+		String^ entered_login = textBox4->Text;												// ініцалізація змінних
 		String^ entered_password = textBox5->Text;
 		String^ captcha = textBox6->Text;
 
-		for each (User^ user in users) {
+		if (entered_login == "" || entered_password == "" || captcha == "") {
+			throw gcnew FormatException();
+		}
+
+		bool autorized = false;																// флаг, якщо користувача знайдено
+		String^ fileName;
+
+		for each (User ^ user in users) {													// перевірка даних для авторизації
 			if (user->GetLogin() == entered_login && user->GetPassword() == entered_password && label2->Text == captcha) {
 				MessageBox::Show("Ви були успішно авторизовані", "Авторизація", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				autorized = true;
+				FoundUser = user;
+
+				FoundUser->SaveUserInFile();
 				break;
 			}
 		}
+
+		if (!autorized) {																	// якщо користувача не знайдено, виводимо месседжбокс
+			MessageBox::Show("Даного користувача не знайдено\nПеревірте коректність логіну, паролю або капчі", "Авторизація", MessageBoxButtons::OK,
+				MessageBoxIcon::Exclamation);
+		}
+	}
+	catch (FormatException^ e) {															// виключення при неправильному форматі заповнення даних
+		MessageBox::Show("Заповніть поля", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
 	}
 
-	};
+}
+
+private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+
+}
+};
 }
