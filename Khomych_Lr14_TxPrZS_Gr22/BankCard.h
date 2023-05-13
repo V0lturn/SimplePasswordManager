@@ -12,6 +12,6 @@ public:																		// методи класу
 	BankCard();																// конструктор за замовчуванням
 	BankCard(String^ _CardNumber, String^ _ExpirationDate, String^ _CVV);	// конструктор з параметрами
 
-	
+
 };
 
