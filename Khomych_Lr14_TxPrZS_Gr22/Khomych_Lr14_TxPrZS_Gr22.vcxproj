@@ -121,13 +121,16 @@
   <ItemGroup>
     <ClCompile Include="BankCard.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="User.cpp" />
     <ClCompile Include="Website.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BankCard.h" />
+    <ClInclude Include="General.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="User.h" />
     <ClInclude Include="Website.h" />
   </ItemGroup>
   <ItemGroup>

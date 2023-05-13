@@ -1,17 +1,14 @@
 #pragma once
-using namespace System;
 
 ref class BankCard															// клас дл€ збер≥ганн€ банк≥вських карт
 {																			
 private:																	// пол€ класу
-	String^ CardNumber;
-	String^ ExpirationDate;
-	String^ CVV;
+	System::String^ CardNumber;
+	System::String^ ExpirationDate;
+	System::String^ CVV;
 
 public:																		// методи класу
 	BankCard();																// конструктор за замовчуванн€м
-	BankCard(String^ _CardNumber, String^ _ExpirationDate, String^ _CVV);	// конструктор з параметрами
-
-	
+	BankCard(System::String^ _CardNumber, System::String^ _ExpirationDate, System::String^ _CVV);	// конструктор з параметрами
 };
 
