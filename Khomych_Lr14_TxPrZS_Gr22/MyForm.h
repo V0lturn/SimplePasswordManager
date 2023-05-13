@@ -531,20 +531,39 @@ namespace KhomychLr14TxPrZSGr22 {
 
 		   List<User^>^ users = gcnew List<User^>();										// ліст усіх користувачів
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-		users->Add(User1);																	// користувачі додані до лісту
-		users->Add(User2);
-		users->Add(User3);
+		try {
+			users->Add(User1);																	// користувачі додані до лісту
+			users->Add(User2);
+			users->Add(User3);
 
-		String^ entered_login = textBox4->Text;
-		String^ entered_password = textBox5->Text;
-		String^ captcha = textBox6->Text;
+			String^ entered_login = textBox4->Text;												// ініцалізація змінних
+			String^ entered_password = textBox5->Text;
+			String^ captcha = textBox6->Text;
 
-		for each (User^ user in users) {
-			if (user->GetLogin() == entered_login && user->GetPassword() == entered_password && label2->Text == captcha) {
-				MessageBox::Show("Ви були успішно авторизовані", "Авторизація", MessageBoxButtons::OK, MessageBoxIcon::Information);
-				break;
+			if (entered_login == "" || entered_password == "" || captcha == "") {
+				throw gcnew FormatException();
+			}
+
+			bool autorized = false;
+			User^ FoundUser;
+			for each (User ^ user in users) {													// перевірка даних для авторизації
+				if (user->GetLogin() == entered_login && user->GetPassword() == entered_password && label2->Text == captcha) {			
+					MessageBox::Show("Ви були успішно авторизовані", "Авторизація", MessageBoxButtons::OK, MessageBoxIcon::Information);
+					autorized = true;
+					FoundUser = user;
+					break;
+				}
+			}
+
+			if (!autorized) {
+				MessageBox::Show("Даного користувача не знайдено\nПеревірте коректність логіну, паролю або капчі", "Авторизація", MessageBoxButtons::OK, 
+					MessageBoxIcon::Exclamation);
 			}
 		}
+		catch (FormatException^ e) {
+			MessageBox::Show("Заповніть поля", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+
 	}
 
 	};
