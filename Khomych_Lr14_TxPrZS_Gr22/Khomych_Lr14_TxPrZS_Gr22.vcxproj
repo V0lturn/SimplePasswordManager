@@ -119,12 +119,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="BankCard.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Website.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BankCard.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Website.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="MyForm.resx">
