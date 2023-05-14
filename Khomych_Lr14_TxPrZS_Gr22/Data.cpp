@@ -2,11 +2,11 @@
 
 System::String^ GeneratePassword()
 {
-	System::Random^ random = gcnew System::Random();					// об'єкт для генерації випадкових чисел
-	System::String^ psw = "";											// функція для генерації пароля
+	System::Random^ random = gcnew System::Random();													// об'єкт для генерації випадкових чисел
+	System::String^ psw = "";																			// функція для генерації пароля
 
 	for (int i = 0; i < 12; i++) {
-		char symbol = char(33 + random->Next(94));						// символи ASCII таблиці від 33 до 126
+		char symbol = char(33 + random->Next(94));														// символи ASCII таблиці від 33 до 126
 		System::String^ symbol_str = gcnew System::String(symbol, 1);
 		psw = System::String::Concat(psw, symbol_str);
 	}
@@ -54,4 +54,11 @@ System::String^ CheckPassword(System::String^ toCheck, System::Windows::Forms::L
 		label->ForeColor = System::Drawing::Color::Orange;
 		return "Середній пароль";
 	}
+}
+
+bool IsURLValid(System::String^ url)																	// реалізація перевірки посилання
+{
+	System::String^ pattern = "^.*\\.com$";																// регулярний вираз на наявність .com
+	Regex^ regex = gcnew Regex(pattern);
+	return regex->IsMatch(url);																			// повертає true or false
 }

@@ -1,7 +1,7 @@
 #include "User.h"
 using namespace System::Windows::Forms;
 
-User::User()													// реалізація конструктора без параметрів
+User::User()																					// реалізація конструктора без параметрів
 {
 	Login = "";
 	Password = "";
@@ -9,7 +9,7 @@ User::User()													// реалізація конструктора без параметрів
 	UsersBankCards = gcnew List<BankCard^>();
 }
 
-User::User(System::String^ _Login, System::String^ _Password)	// реалізація конструктора з параметрами
+User::User(System::String^ _Login, System::String^ _Password)									// реалізація конструктора з параметрами
 {
 	Login = _Login;
 	Password = _Password;
@@ -17,17 +17,17 @@ User::User(System::String^ _Login, System::String^ _Password)	// реалізація конс
 	UsersBankCards = gcnew List<BankCard^>();
 }
 
-System::String^ User::GetLogin()								// отримуємо значення логіну
+System::String^ User::GetLogin()																// отримуємо значення логіну
 {
 	return Login;
 }
 
-System::String^ User::GetPassword()								// отримуємо значення для паролю
+System::String^ User::GetPassword()																// отримуємо значення для паролю
 {
 	return Password;
 }
 
-void User::SaveUserInFile()										// реалізація методу запису даних користувача у файл
+void User::SaveUserInFile()																		// реалізація методу запису даних користувача у файл
 {
 	try {
 		SaveFileDialog^ saveFileDialog1 = gcnew SaveFileDialog();								// Створюємо нове діалогове вікно для збереження файлу
@@ -65,7 +65,7 @@ void User::SaveUserInFile()										// реалізація методу запису даних користува
 			
 		}
 	}
-	catch (System::NullReferenceException^ e) {						// якщо параметр FileName у объекта saveFileDialog1 має значення nullptr.
+	catch (System::NullReferenceException^ e) {					// якщо параметр FileName у объекта saveFileDialog1 має значення nullptr.
 		MessageBox::Show("Сталась помилка при відкритті файлу", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
 	}
 }

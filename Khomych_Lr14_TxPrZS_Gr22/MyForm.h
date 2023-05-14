@@ -603,14 +603,14 @@ namespace KhomychLr14TxPrZSGr22 {
 		GenerateCaptcha(label2);																	// виклик функція для створення капчі
 	}
 
-		   User^ FoundUser;																	// зміна за залогованого корстувача
+		   User^ FoundUser;																			// зміна за залогованого корстувача
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
 		try {
-			users->Add(User1);																	// користувачі додані до лісту
+			users->Add(User1);																		// користувачі додані до лісту
 			users->Add(User2);
 			users->Add(User3);
 
-			String^ entered_login = textBox4->Text;												// ініцалізація змінних
+			String^ entered_login = textBox4->Text;													// ініцалізація змінних
 			String^ entered_password = textBox5->Text;
 			String^ captcha = textBox6->Text;
 
@@ -618,9 +618,9 @@ namespace KhomychLr14TxPrZSGr22 {
 				throw gcnew FormatException();
 			}
 
-			bool autorized = false;																// флаг, якщо користувача знайдено
+			bool autorized = false;																	// флаг, якщо користувача знайдено
 
-			for each (User ^ user in users) {													// перевірка даних для авторизації
+			for each (User ^ user in users) {														// перевірка даних для авторизації
 				if (user->GetLogin() == entered_login && user->GetPassword() == entered_password) {
 					if (label2->Text == captcha) {
 						MessageBox::Show("Ви були успішно авторизовані", "Авторизація", MessageBoxButtons::OK, MessageBoxIcon::Information);
@@ -636,7 +636,7 @@ namespace KhomychLr14TxPrZSGr22 {
 				}
 			}
 
-			if (!autorized) {																	// якщо користувача не знайдено, виводимо месседжбокс
+			if (!autorized) {																		// якщо користувача не знайдено, виводимо месседжбокс
 				throw NotAutorizedException("Помилка при авторизації");
 			}
 			else {
@@ -651,55 +651,55 @@ namespace KhomychLr14TxPrZSGr22 {
 				GenerateCaptcha(label2);
 			}
 		}
-		catch (FormatException^ e) {															// виключення при неправильному форматі заповнення даних
+		catch (FormatException^ e) {																// виключення при неправильному форматі заповнення даних
 			MessageBox::Show("Заповніть поля", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
-		catch (CaptchaException& e) {															// власне виключення при неправильній капчі
+		catch (CaptchaException& e) {																// власне виключення при неправильній капчі
 			MessageBox::Show("Помилка при введені капчі", "Помилка капчі", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
 		}
-		catch (NotAutorizedException& e) {														// власне виключення при помилці авторизації
+		catch (NotAutorizedException& e) {															// власне виключення при помилці авторизації
 			MessageBox::Show("Даного користувача не знайдено\nПеревірте коректність логіну, паролю або капчі", "Авторизація", MessageBoxButtons::OK,
 				MessageBoxIcon::Exclamation);
 		}
 
 	}
-	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {			// генерація капчі на строрінці реєстрації
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {				// генерація капчі на строрінці реєстрації
 		GenerateCaptcha(label10);
 	}
 
 	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
-		textBox2->Text = GeneratePassword();													// згенерувати пароль
+		textBox2->Text = GeneratePassword();														// згенерувати пароль
 	}
 
-	private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {	// перевірка паролю на складність при введенні
-		String^ password = textBox2->Text;														// введений пароль
-		String^ strength = CheckPassword(password, label11);									// перевірка паролю на складність
-		label11->Text = strength;																// виведення тексту у Label
+	private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {		// перевірка паролю на складність при введенні
+		String^ password = textBox2->Text;															// введений пароль
+		String^ strength = CheckPassword(password, label11);										// перевірка паролю на складність
+		label11->Text = strength;																	// виведення тексту у Label
 	}
 
-	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {				// реєстрація нового користувача
 		try {
-			String^ entered_login = textBox3->Text;												// ініцалізація змінних
+			String^ entered_login = textBox3->Text;													// ініцалізація змінних
 			String^ entered_password = textBox2->Text;
 			String^ captcha = textBox1->Text;
 
-			if (entered_login == "" || entered_password == "" || captcha == "") {				// перевірка ввода даних
+			if (entered_login == "" || entered_password == "" || captcha == "") {					// перевірка ввода даних
 				throw gcnew FormatException();
 			}
 
-			if (captcha == label10->Text) {
+			if (captcha == label10->Text) {															// якщо капчу ввели коректно
 				MessageBox::Show("Ви були успішно зареєстровані", "Реєстрація", MessageBoxButtons::OK, MessageBoxIcon::Information);
-				User^ NewUser = gcnew User(entered_login, entered_password);
+				User^ NewUser = gcnew User(entered_login, entered_password);						// створюємо нового користувача
 				users->Add(NewUser);
 			}
-			else {
+			else {																					// якщо капча не пройдено, викликаємо повідомлення
 				throw CaptchaException("Помилка при введені капчі");
 			}
 		}
-		catch (FormatException^ e) {															// виключення при неправильному форматі заповнення даних
+		catch (FormatException^ e) {																// виключення при неправильному форматі заповнення даних
 			MessageBox::Show("Заповніть поля", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
-		catch (CaptchaException& e) {
+		catch (CaptchaException& e) {																// обробка виключення
 			MessageBox::Show("Помилка при введені капчі", "Помилка капчі", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
 		}
 	}
