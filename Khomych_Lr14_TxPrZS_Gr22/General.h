@@ -16,3 +16,23 @@ string ConvertStr(System::String^ str);											// функція ковертації String^ 
 System::String^ ConvertToCliStr(std::string str);								// функція ковертації string в String^
 string Sm3(const string& input);												// функція хешування алгоритмом SM3
 System::String^ CheckPassword(System::String^ toCheck, System::Windows::Forms::Label^ label);	// перевірка паролю на складність
+
+class CaptchaException : public exception
+{
+public:
+    CaptchaException(const string& message) : m_message(message) {}
+    const char* what() const noexcept override { return m_message.c_str(); }
+
+private:
+    string m_message;
+};
+
+class NotAutorizedException : public exception
+{
+public:
+    NotAutorizedException(const string& message) : m_message(message) {}
+    const char* what() const noexcept override { return m_message.c_str(); }
+
+private:
+    string m_message;
+};
