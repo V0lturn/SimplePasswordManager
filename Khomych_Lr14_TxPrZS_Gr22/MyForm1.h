@@ -34,6 +34,15 @@ namespace KhomychLr14TxPrZSGr22 {
 				delete components;
 			}
 		}
+	private: System::Windows::Forms::MenuStrip^ menuStrip1;
+	protected:
+	private: System::Windows::Forms::ToolStripMenuItem^ âåáñàéòèToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ áàíê³âñüê³ÊàğòèToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ áåçïåêàÄàíèõToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ âèõäToolStripMenuItem;
+	private: System::Windows::Forms::TabControl^ tabControl1;
+	private: System::Windows::Forms::TabPage^ tabPage1;
+	private: System::Windows::Forms::TabPage^ tabPage2;
 
 	private:
 		/// <summary>
@@ -48,16 +57,103 @@ namespace KhomychLr14TxPrZSGr22 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->âåáñàéòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->áåçïåêàÄàíèõToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->âèõäToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
+			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->menuStrip1->SuspendLayout();
+			this->tabControl1->SuspendLayout();
 			this->SuspendLayout();
+			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->Font = (gcnew System::Drawing::Font(L"Cambria", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
+				this->âåáñàéòèToolStripMenuItem,
+					this->áàíê³âñüê³ÊàğòèToolStripMenuItem, this->áåçïåêàÄàíèõToolStripMenuItem, this->âèõäToolStripMenuItem
+			});
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Size = System::Drawing::Size(1216, 30);
+			this->menuStrip1->TabIndex = 0;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// âåáñàéòèToolStripMenuItem
+			// 
+			this->âåáñàéòèToolStripMenuItem->Name = L"âåáñàéòèToolStripMenuItem";
+			this->âåáñàéòèToolStripMenuItem->Size = System::Drawing::Size(102, 26);
+			this->âåáñàéòèToolStripMenuItem->Text = L"Âåáñàéòè";
+			// 
+			// áàíê³âñüê³ÊàğòèToolStripMenuItem
+			// 
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Name = L"áàíê³âñüê³ÊàğòèToolStripMenuItem";
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Size = System::Drawing::Size(166, 26);
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Text = L"Áàíê³âñüê³ êàğòè";
+			// 
+			// áåçïåêàÄàíèõToolStripMenuItem
+			// 
+			this->áåçïåêàÄàíèõToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 0, 650, 0);
+			this->áåçïåêàÄàíèõToolStripMenuItem->Name = L"áåçïåêàÄàíèõToolStripMenuItem";
+			this->áåçïåêàÄàíèõToolStripMenuItem->Size = System::Drawing::Size(145, 26);
+			this->áåçïåêàÄàíèõToolStripMenuItem->Text = L"Áåçïåêà äàíèõ";
+			// 
+			// âèõäToolStripMenuItem
+			// 
+			this->âèõäToolStripMenuItem->Name = L"âèõäToolStripMenuItem";
+			this->âèõäToolStripMenuItem->Size = System::Drawing::Size(70, 26);
+			this->âèõäToolStripMenuItem->Text = L"Âèõ³ä";
+			// 
+			// tabControl1
+			// 
+			this->tabControl1->Controls->Add(this->tabPage1);
+			this->tabControl1->Controls->Add(this->tabPage2);
+			this->tabControl1->Location = System::Drawing::Point(125, 77);
+			this->tabControl1->Name = L"tabControl1";
+			this->tabControl1->SelectedIndex = 0;
+			this->tabControl1->Size = System::Drawing::Size(956, 531);
+			this->tabControl1->TabIndex = 1;
+			// 
+			// tabPage1
+			// 
+			this->tabPage1->Location = System::Drawing::Point(4, 22);
+			this->tabPage1->Name = L"tabPage1";
+			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage1->Size = System::Drawing::Size(948, 505);
+			this->tabPage1->TabIndex = 0;
+			this->tabPage1->Text = L"tabPage1";
+			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// tabPage2
+			// 
+			this->tabPage2->Location = System::Drawing::Point(4, 22);
+			this->tabPage2->Name = L"tabPage2";
+			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
+			this->tabPage2->Size = System::Drawing::Size(904, 448);
+			this->tabPage2->TabIndex = 1;
+			this->tabPage2->Text = L"tabPage2";
+			this->tabPage2->UseVisualStyleBackColor = true;
 			// 
 			// MyForm1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(967, 624);
+			this->BackColor = System::Drawing::Color::RoyalBlue;
+			this->ClientSize = System::Drawing::Size(1216, 705);
+			this->Controls->Add(this->tabControl1);
+			this->Controls->Add(this->menuStrip1);
+			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm1";
 			this->Text = L"MyForm1";
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
+			this->tabControl1->ResumeLayout(false);
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
