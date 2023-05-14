@@ -5,3 +5,8 @@
 
 
 		User^ NewUser = gcnew User("NewUser", 6PAySki>2NY4);
+		
+		example.com
+		new_user
+		sdasd7*jkasA
+

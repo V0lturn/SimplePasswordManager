@@ -1,5 +1,6 @@
 #pragma once
 #include "General.h"
+
 namespace KhomychLr14TxPrZSGr22 {
 
 	using namespace System;
