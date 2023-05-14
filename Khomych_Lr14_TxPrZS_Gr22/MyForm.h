@@ -1,6 +1,6 @@
 #pragma once
 #include "General.h"
-//#include "HashFunction.h"
+#include "MyForm1.h"
 namespace KhomychLr14TxPrZSGr22 {
 
 	using namespace System;
@@ -640,7 +640,9 @@ namespace KhomychLr14TxPrZSGr22 {
 				throw NotAutorizedException("Помилка при авторизації");
 			}
 			else {
-
+				MyForm1^ second_form = gcnew MyForm1();
+				this->Hide();
+				second_form->Show();
 			}
 		}
 		catch (FormatException^ e) {															// виключення при неправильному форматі заповнення даних

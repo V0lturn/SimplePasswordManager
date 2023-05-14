@@ -1,3 +1,7 @@
 		User^ User1 = gcnew User("kangaroo", "hT@U4852");			// створення 3 користувачів по замовчуванню
 		User^ User1 = gcnew User("chimpanzee", "fN325@st");
 		User^ User1 = gcnew User("goldfish", "4&D@Ju53");
+
+
+
+		User^ NewUser = gcnew User("NewUser", 6PAySki>2NY4);

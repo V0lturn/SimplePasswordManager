@@ -36,6 +36,9 @@
     <ClCompile Include="HashFunction.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="MyForm1.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -52,6 +55,9 @@
     </ClInclude>
     <ClInclude Include="Website.h">
       <Filter>Файлы заголовков\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="MyForm1.h">
+      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
