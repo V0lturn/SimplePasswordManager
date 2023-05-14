@@ -436,6 +436,10 @@ namespace KhomychLr14TxPrZSGr22 {
 			MyForm3^ fourth_form = gcnew MyForm3();													// створюємо об'єкт форми вводу даних
 			fourth_form->ShowDialog();																// виводимо другу форму
 
+			if (fourth_form->textBox1->Text == "" || fourth_form->textBox2->Text == "" || fourth_form->textBox3->Text == "") {
+				throw gcnew FormatException();
+			}
+
 			String^ Link = fourth_form->textBox1->Text;												// збергіаємо значення, введені користувачем
 			String^ Login = fourth_form->textBox2->Text;
 			String^ Password = fourth_form->textBox3->Text;
@@ -445,7 +449,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			CurrentUser->UserWebsites->Add(new_website);											// додаємо до списку
 			CreateWebSiteDGW();																		// генеруємо таблицю
 		}
-		catch (Exception^ e) {	// виключення, коли користувач не ввів дані
+		catch (FormatException^ e) {																// виключення, коли користувач не ввів дані
 			MessageBox::Show("Введіть дані", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
 		}
 	}
@@ -453,11 +457,17 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {				// видалення запису
 		try {
 			int index = Convert::ToInt32(textBox1->Text);											// індекс елемента для видалення
+			if (textBox1->Text == "") {
+				throw gcnew FormatException();
+			}
 			CurrentUser->UserWebsites->RemoveAt(index - 1);											// видаляємо елемент
 			CreateWebSiteDGW();																		// генеруємо таблицю
 		}
 		catch (ArgumentOutOfRangeException^ e) {													// обробка виключення
 			MessageBox::Show("Спроба видалити неіснуючий запис", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+		catch (FormatException^ e) {																// виключення, коли користувач не ввів дані
+			MessageBox::Show("Введіть дані", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
 		}
 	}
 	};

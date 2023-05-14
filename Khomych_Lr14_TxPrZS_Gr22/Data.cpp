@@ -55,3 +55,10 @@ System::String^ CheckPassword(System::String^ toCheck, System::Windows::Forms::L
 		return "Середній пароль";
 	}
 }
+
+bool IsURLValid(System::String^ url)																	// реалізація перевірки посилання
+{
+	System::String^ pattern = "^.*\\.com$";																// регулярний вираз на наявність .com
+	Regex^ regex = gcnew Regex(pattern);
+	return regex->IsMatch(url);																			// повертає true or false
+}

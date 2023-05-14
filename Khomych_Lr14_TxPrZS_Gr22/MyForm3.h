@@ -1,5 +1,5 @@
 #pragma once
-
+#include "General.h"
 namespace KhomychLr14TxPrZSGr22 {
 
 	using namespace System;
@@ -42,12 +42,13 @@ namespace KhomychLr14TxPrZSGr22 {
 	public: System::Windows::Forms::TextBox^ textBox2;
 	public: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
 
 	private:
 		/// <summary>
 		/// Обязательная переменная конструктора.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -63,6 +64,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox3 = (gcnew System::Windows::Forms::TextBox());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -134,13 +136,27 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button1->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button1->Location = System::Drawing::Point(149, 209);
+			this->button1->Location = System::Drawing::Point(294, 209);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(222, 56);
+			this->button1->Size = System::Drawing::Size(171, 56);
 			this->button1->TabIndex = 6;
 			this->button1->Text = L"Закрити";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm3::button1_Click);
+			// 
+			// button2
+			// 
+			this->button2->BackColor = System::Drawing::Color::PaleGreen;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button2->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button2->Location = System::Drawing::Point(65, 209);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(171, 56);
+			this->button2->TabIndex = 7;
+			this->button2->Text = L"Ок";
+			this->button2->UseVisualStyleBackColor = false;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm3::button2_Click);
 			// 
 			// MyForm3
 			// 
@@ -148,6 +164,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::RoyalBlue;
 			this->ClientSize = System::Drawing::Size(538, 277);
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox3);
 			this->Controls->Add(this->textBox2);
@@ -156,6 +173,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->label1);
 			this->Name = L"MyForm3";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Додати запис";
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -163,8 +181,30 @@ namespace KhomychLr14TxPrZSGr22 {
 		}
 #pragma endregion
 
-private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Close();
-}
-};
+	public: ref class NotAUrlException : public Exception									// виключення якщо посилання неправильне
+	{
+	public:
+		NotAUrlException(String^ message) : Exception(message) {}
+	};
+
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {		// перевірка посилання
+		try {
+			String^ Link = textBox1->Text;
+			if (!IsURLValid(Link)) {														// якщо посилання неправильне
+				throw gcnew NotAUrlException("Неправильне посилання");						// викликаємо виключення
+			}
+			else {																			// в іншому випадку дані передаються і форма закривається
+				Close();
+			}
+		}
+		catch (NotAUrlException^ e) {														// неправильне посилання
+			MessageBox::Show("Неправильне посилання", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+	}
+
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {		// закриття форми
+		this->Close();
+	}
+
+	};
 }
