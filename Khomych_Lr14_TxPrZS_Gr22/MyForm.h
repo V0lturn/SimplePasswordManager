@@ -60,6 +60,10 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Windows::Forms::TextBox^ textBox2;
 	private: System::Windows::Forms::TextBox^ textBox3;
 	private: System::Windows::Forms::SaveFileDialog^ saveFileDialog1;
+	private: System::Windows::Forms::PictureBox^ pictureBox1;
+	private: System::Windows::Forms::PictureBox^ pictureBox2;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::Label^ label11;
 
 
 
@@ -77,8 +81,10 @@ namespace KhomychLr14TxPrZSGr22 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
@@ -90,6 +96,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->textBox5 = (gcnew System::Windows::Forms::TextBox());
 			this->textBox4 = (gcnew System::Windows::Forms::TextBox());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->button5 = (gcnew System::Windows::Forms::Button());
+			this->pictureBox1 = (gcnew System::Windows::Forms::PictureBox());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->label8 = (gcnew System::Windows::Forms::Label());
 			this->label9 = (gcnew System::Windows::Forms::Label());
@@ -103,7 +112,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->BeginInit();
 			this->tabPage2->SuspendLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// tabControl1
@@ -123,6 +134,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			// tabPage1
 			// 
 			this->tabPage1->BackColor = System::Drawing::Color::White;
+			this->tabPage1->Controls->Add(this->pictureBox2);
 			this->tabPage1->Controls->Add(this->button2);
 			this->tabPage1->Controls->Add(this->label7);
 			this->tabPage1->Controls->Add(this->label6);
@@ -141,6 +153,17 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage1->Size = System::Drawing::Size(478, 563);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Авторизація";
+			// 
+			// pictureBox2
+			// 
+			this->pictureBox2->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
+			this->pictureBox2->Location = System::Drawing::Point(40, 17);
+			this->pictureBox2->Name = L"pictureBox2";
+			this->pictureBox2->Size = System::Drawing::Size(80, 101);
+			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBox2->TabIndex = 23;
+			this->pictureBox2->TabStop = false;
 			// 
 			// button2
 			// 
@@ -226,9 +249,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Cambria", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label1->ForeColor = System::Drawing::Color::Black;
-			this->label1->Location = System::Drawing::Point(3, 27);
+			this->label1->Location = System::Drawing::Point(93, 27);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(472, 91);
+			this->label1->Size = System::Drawing::Size(379, 91);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Менеджер паролів";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -256,6 +279,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			// tabPage2
 			// 
 			this->tabPage2->BackColor = System::Drawing::Color::White;
+			this->tabPage2->Controls->Add(this->label11);
+			this->tabPage2->Controls->Add(this->button5);
+			this->tabPage2->Controls->Add(this->pictureBox1);
 			this->tabPage2->Controls->Add(this->label3);
 			this->tabPage2->Controls->Add(this->label8);
 			this->tabPage2->Controls->Add(this->label9);
@@ -273,11 +299,46 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Реєстрація";
 			// 
+			// label11
+			// 
+			this->label11->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->label11->Location = System::Drawing::Point(227, 241);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(199, 25);
+			this->label11->TabIndex = 24;
+			this->label11->TextAlign = System::Drawing::ContentAlignment::TopCenter;
+			// 
+			// button5
+			// 
+			this->button5->BackColor = System::Drawing::Color::PaleGreen;
+			this->button5->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button5->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button5->Location = System::Drawing::Point(143, 415);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(168, 47);
+			this->button5->TabIndex = 23;
+			this->button5->Text = L"Згенерувати\r\nпароль\r\n";
+			this->button5->UseVisualStyleBackColor = false;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm::button5_Click);
+			// 
+			// pictureBox1
+			// 
+			this->pictureBox1->BackColor = System::Drawing::Color::Transparent;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
+			this->pictureBox1->Location = System::Drawing::Point(40, 17);
+			this->pictureBox1->Name = L"pictureBox1";
+			this->pictureBox1->Size = System::Drawing::Size(80, 101);
+			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::AutoSize;
+			this->pictureBox1->TabIndex = 22;
+			this->pictureBox1->TabStop = false;
+			// 
 			// label3
 			// 
 			this->label3->BackColor = System::Drawing::Color::Transparent;
 			this->label3->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->label3->Location = System::Drawing::Point(73, 369);
+			this->label3->Location = System::Drawing::Point(73, 352);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(180, 32);
 			this->label3->TabIndex = 21;
@@ -308,7 +369,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Cambria", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->textBox1->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->textBox1->Location = System::Drawing::Point(307, 369);
+			this->textBox1->Location = System::Drawing::Point(307, 352);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(115, 32);
 			this->textBox1->TabIndex = 18;
@@ -319,18 +380,19 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Cambria", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button3->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button3->Location = System::Drawing::Point(294, 281);
+			this->button3->Location = System::Drawing::Point(294, 269);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(128, 60);
 			this->button3->TabIndex = 17;
 			this->button3->Text = L"Створити\r\nнову";
 			this->button3->UseVisualStyleBackColor = false;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// label10
 			// 
 			this->label10->BackColor = System::Drawing::Color::LightGray;
 			this->label10->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->label10->Location = System::Drawing::Point(105, 281);
+			this->label10->Location = System::Drawing::Point(105, 269);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(126, 60);
 			this->label10->TabIndex = 16;
@@ -341,10 +403,11 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->textBox2->Font = (gcnew System::Drawing::Font(L"Cambria", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->textBox2->ForeColor = System::Drawing::SystemColors::ControlDarkDark;
-			this->textBox2->Location = System::Drawing::Point(223, 206);
+			this->textBox2->Location = System::Drawing::Point(227, 206);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(199, 32);
 			this->textBox2->TabIndex = 15;
+			this->textBox2->TextChanged += gcnew System::EventHandler(this, &MyForm::textBox2_TextChanged);
 			// 
 			// textBox3
 			// 
@@ -362,7 +425,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button4->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button4->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button4->Location = System::Drawing::Point(63, 456);
+			this->button4->Location = System::Drawing::Point(63, 479);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(359, 68);
 			this->button4->TabIndex = 13;
@@ -376,9 +439,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Cambria", 24, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label4->ForeColor = System::Drawing::Color::Black;
-			this->label4->Location = System::Drawing::Point(3, 27);
+			this->label4->Location = System::Drawing::Point(93, 27);
 			this->label4->Name = L"label4";
-			this->label4->Size = System::Drawing::Size(472, 91);
+			this->label4->Size = System::Drawing::Size(379, 91);
 			this->label4->TabIndex = 9;
 			this->label4->Text = L"Менеджер паролів";
 			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -397,14 +460,16 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabControl1->ResumeLayout(false);
 			this->tabPage1->ResumeLayout(false);
 			this->tabPage1->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox2))->EndInit();
 			this->tabPage2->ResumeLayout(false);
 			this->tabPage2->PerformLayout();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 
-	public: void GenerateCaptcha()
+	public: void GenerateCaptcha(Label^ label)
 	{
 		Random^ rnd = gcnew Random();														// створення обьекту для генерації випадкових чисел
 		String^ chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";	// можливі символи
@@ -413,168 +478,184 @@ namespace KhomychLr14TxPrZSGr22 {
 		{
 			captcha += chars[rnd->Next(0, chars->Length)];
 		}
-		label2->Text = captcha;																// виведення капчі
+		label->Text = captcha;																// виведення капчі
 	}
 
-	User^ User1 = gcnew User("kangaroo", "hT@U4852");			// створення 3 користувачів по замовчуванню
-	User^ User2 = gcnew User("chimpanzee", "fN325@st");
-	User^ User3 = gcnew User("goldfish", "4&D@Ju53");
+		  User^ User1 = gcnew User("kangaroo", "hT@U4852");			// створення 3 користувачів по замовчуванню
+		  User^ User2 = gcnew User("chimpanzee", "fN325@st");
+		  User^ User3 = gcnew User("goldfish", "4&D@Ju53");
 
-private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {		// ініціалізація даних стандартних користувачів + створення початкової капчі
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {		// ініціалізація даних стандартних користувачів + створення початкової капчі
 #pragma region Initialize users
-	Website^ website1 = gcnew Website("https://www.google.com/", "kAngaro0", "aaaaaaa");
-	Website^ website2 = gcnew Website("https://www.youtube.com/", "kang@roO", "BBBBBBBB");
-	Website^ website3 = gcnew Website("https://www.facebook.com/", "Kangar00", "password3");
-	Website^ website4 = gcnew Website("https://www.amazon.com/", "k@nGAr0o", "pasSword");
-	Website^ website5 = gcnew Website("https://www.wikipedia.org/", "Kang@roo", "password-");
-	Website^ website6 = gcnew Website("https://twitter.com/", "k@NgaRoo", "88888888");
-	Website^ website7 = gcnew Website("https://www.instagram.com/", "K@ng@roo", "ccccc");
-	Website^ website8 = gcnew Website("https://www.linkedin.com/", "kang@R00", "---------");
-	Website^ website9 = gcnew Website("https://www.reddit.com/", "KANGaroo", "ceKN2*wZ");
-	Website^ website10 = gcnew Website("https://www.netflix.com/", "k@ng@r00", "bhWGxBz7~{?");
+		Website^ website1 = gcnew Website("https://www.google.com/", "kAngaro0", "aaaaaaa");
+		Website^ website2 = gcnew Website("https://www.youtube.com/", "kang@roO", "BBBBBBBB");
+		Website^ website3 = gcnew Website("https://www.facebook.com/", "Kangar00", "password3");
+		Website^ website4 = gcnew Website("https://www.amazon.com/", "k@nGAr0o", "pasSword");
+		Website^ website5 = gcnew Website("https://www.wikipedia.org/", "Kang@roo", "password-");
+		Website^ website6 = gcnew Website("https://twitter.com/", "k@NgaRoo", "88888888");
+		Website^ website7 = gcnew Website("https://www.instagram.com/", "K@ng@roo", "ccccc");
+		Website^ website8 = gcnew Website("https://www.linkedin.com/", "kang@R00", "---------");
+		Website^ website9 = gcnew Website("https://www.reddit.com/", "KANGaroo", "ceKN2*wZ");
+		Website^ website10 = gcnew Website("https://www.netflix.com/", "k@ng@r00", "bhWGxBz7~{?");
 
-	User1->UserWebsites->Add(website1);
-	User1->UserWebsites->Add(website2);
-	User1->UserWebsites->Add(website3);
-	User1->UserWebsites->Add(website4);
-	User1->UserWebsites->Add(website5);
-	User1->UserWebsites->Add(website6);
-	User1->UserWebsites->Add(website7);
-	User1->UserWebsites->Add(website8);
-	User1->UserWebsites->Add(website9);
-	User1->UserWebsites->Add(website10);
+		User1->UserWebsites->Add(website1);
+		User1->UserWebsites->Add(website2);
+		User1->UserWebsites->Add(website3);
+		User1->UserWebsites->Add(website4);
+		User1->UserWebsites->Add(website5);
+		User1->UserWebsites->Add(website6);
+		User1->UserWebsites->Add(website7);
+		User1->UserWebsites->Add(website8);
+		User1->UserWebsites->Add(website9);
+		User1->UserWebsites->Add(website10);
 
-	Website^ website11 = gcnew Website("https://www.amazon.com/", "ch1mpanzee", "PPPPPPPP");
-	Website^ website12 = gcnew Website("https://www.facebook.com/", "chimp@nzee", "password6");
-	Website^ website13 = gcnew Website("https://www.instagram.com/", "chImp@nzee", "passwOrd");
-	Website^ website14 = gcnew Website("https://twitter.com/", "ch1mp@nz3e", "pass$word");
-	Website^ website15 = gcnew Website("https://www.linkedin.com/", "chImp@nz33", "11111111");
-	Website^ website16 = gcnew Website("https://www.reddit.com/", "ChImp@nze3", "mmmm");
-	Website^ website17 = gcnew Website("https://www.twitch.tv/", "cH1mpanz3e", ":::::::::");
-	Website^ website18 = gcnew Website("https://www.dropbox.com/", "ch1mPanz33", "2uH*J$W5ME");
-	Website^ website19 = gcnew Website("https://slack.com/", "CH1mp@nzEe", "B'wQ3!Z(");
-	Website^ website20 = gcnew Website("https://www.airbnb.com/", "chImpanzee", "kkkkkkkk");
+		Website^ website11 = gcnew Website("https://www.amazon.com/", "ch1mpanzee", "PPPPPPPP");
+		Website^ website12 = gcnew Website("https://www.facebook.com/", "chimp@nzee", "password6");
+		Website^ website13 = gcnew Website("https://www.instagram.com/", "chImp@nzee", "passwOrd");
+		Website^ website14 = gcnew Website("https://twitter.com/", "ch1mp@nz3e", "pass$word");
+		Website^ website15 = gcnew Website("https://www.linkedin.com/", "chImp@nz33", "11111111");
+		Website^ website16 = gcnew Website("https://www.reddit.com/", "ChImp@nze3", "mmmm");
+		Website^ website17 = gcnew Website("https://www.twitch.tv/", "cH1mpanz3e", ":::::::::");
+		Website^ website18 = gcnew Website("https://www.dropbox.com/", "ch1mPanz33", "2uH*J$W5ME");
+		Website^ website19 = gcnew Website("https://slack.com/", "CH1mp@nzEe", "B'wQ3!Z(");
+		Website^ website20 = gcnew Website("https://www.airbnb.com/", "chImpanzee", "kkkkkkkk");
 
-	User2->UserWebsites->Add(website11);
-	User2->UserWebsites->Add(website12);
-	User2->UserWebsites->Add(website13);
-	User2->UserWebsites->Add(website14);
-	User2->UserWebsites->Add(website15);
-	User2->UserWebsites->Add(website16);
-	User2->UserWebsites->Add(website17);
-	User2->UserWebsites->Add(website18);
-	User2->UserWebsites->Add(website19);
-	User2->UserWebsites->Add(website20);
+		User2->UserWebsites->Add(website11);
+		User2->UserWebsites->Add(website12);
+		User2->UserWebsites->Add(website13);
+		User2->UserWebsites->Add(website14);
+		User2->UserWebsites->Add(website15);
+		User2->UserWebsites->Add(website16);
+		User2->UserWebsites->Add(website17);
+		User2->UserWebsites->Add(website18);
+		User2->UserWebsites->Add(website19);
+		User2->UserWebsites->Add(website20);
 
-	Website^ website21 = gcnew Website("https://www.amazon.com/", "g0ldfish", "xxxxxxxx");
-	Website^ website22 = gcnew Website("https://www.facebook.com/", "goldf1sh", "2password");
-	Website^ website23 = gcnew Website("https://www.instagram.com/", "g0ldf1sh", "pAssword");
-	Website^ website24 = gcnew Website("https://twitter.com/", "Goldfish", "p@ssword");
-	Website^ website25 = gcnew Website("https://www.linkedin.com/", "G0ldfish", "44444444");
-	Website^ website26 = gcnew Website("https://www.reddit.com/", "Goldf1sh", "rrrr");
-	Website^ website27 = gcnew Website("https://www.twitch.tv/", "G0ldf1sh", "++++++++++");
-	Website^ website28 = gcnew Website("https://www.dropbox.com/", "GOLDfish", "JJJJJJJJJ");
-	Website^ website29 = gcnew Website("https://slack.com/", "goldFISH", "Yr]d('9K");
-	Website^ website30 = gcnew Website("https://www.airbnb.com/", "G0lDF1sh", "JJkt.hK6SC");
+		Website^ website21 = gcnew Website("https://www.amazon.com/", "g0ldfish", "xxxxxxxx");
+		Website^ website22 = gcnew Website("https://www.facebook.com/", "goldf1sh", "2password");
+		Website^ website23 = gcnew Website("https://www.instagram.com/", "g0ldf1sh", "pAssword");
+		Website^ website24 = gcnew Website("https://twitter.com/", "Goldfish", "p@ssword");
+		Website^ website25 = gcnew Website("https://www.linkedin.com/", "G0ldfish", "44444444");
+		Website^ website26 = gcnew Website("https://www.reddit.com/", "Goldf1sh", "rrrr");
+		Website^ website27 = gcnew Website("https://www.twitch.tv/", "G0ldf1sh", "++++++++++");
+		Website^ website28 = gcnew Website("https://www.dropbox.com/", "GOLDfish", "JJJJJJJJJ");
+		Website^ website29 = gcnew Website("https://slack.com/", "goldFISH", "Yr]d('9K");
+		Website^ website30 = gcnew Website("https://www.airbnb.com/", "G0lDF1sh", "JJkt.hK6SC");
 
-	User3->UserWebsites->Add(website21);
-	User3->UserWebsites->Add(website22);
-	User3->UserWebsites->Add(website23);
-	User3->UserWebsites->Add(website24);
-	User3->UserWebsites->Add(website25);
-	User3->UserWebsites->Add(website26);
-	User3->UserWebsites->Add(website27);
-	User3->UserWebsites->Add(website28);
-	User3->UserWebsites->Add(website29);
-	User3->UserWebsites->Add(website30);
+		User3->UserWebsites->Add(website21);
+		User3->UserWebsites->Add(website22);
+		User3->UserWebsites->Add(website23);
+		User3->UserWebsites->Add(website24);
+		User3->UserWebsites->Add(website25);
+		User3->UserWebsites->Add(website26);
+		User3->UserWebsites->Add(website27);
+		User3->UserWebsites->Add(website28);
+		User3->UserWebsites->Add(website29);
+		User3->UserWebsites->Add(website30);
 
-	BankCard^ bankcard1 = gcnew BankCard("3956-5782-5214-7139", "25/03", "832");
-	BankCard^ bankcard2 = gcnew BankCard("5958-5867-1810-5335", "23/12", "841");
-	BankCard^ bankcard3 = gcnew BankCard("4252-8572-1049-3286", "24/05", "721");
-	BankCard^ bankcard4 = gcnew BankCard("8888-6785-1536-9882", "27/01", "212");
-	BankCard^ bankcard5 = gcnew BankCard("3658-3298-4921-0104", "28/03", "532");
+		BankCard^ bankcard1 = gcnew BankCard("3956-5782-5214-7139", "25/03", "832");
+		BankCard^ bankcard2 = gcnew BankCard("5958-5867-1810-5335", "23/12", "841");
+		BankCard^ bankcard3 = gcnew BankCard("4252-8572-1049-3286", "24/05", "721");
+		BankCard^ bankcard4 = gcnew BankCard("8888-6785-1536-9882", "27/01", "212");
+		BankCard^ bankcard5 = gcnew BankCard("3658-3298-4921-0104", "28/03", "532");
 
-	User1->UsersBankCards->Add(bankcard1);
-	User1->UsersBankCards->Add(bankcard2);
-	User1->UsersBankCards->Add(bankcard3);
-	User1->UsersBankCards->Add(bankcard4);
-	User1->UsersBankCards->Add(bankcard5);
+		User1->UsersBankCards->Add(bankcard1);
+		User1->UsersBankCards->Add(bankcard2);
+		User1->UsersBankCards->Add(bankcard3);
+		User1->UsersBankCards->Add(bankcard4);
+		User1->UsersBankCards->Add(bankcard5);
 
-	BankCard^ bankcard6 = gcnew BankCard("8994-6510-6743-7576", "25/09", "753");
-	BankCard^ bankcard7 = gcnew BankCard("1827-1189-8638-1029", "23/10", "279");
-	BankCard^ bankcard8 = gcnew BankCard("7108-8824-1018-8410", "28/02", "703");
-	BankCard^ bankcard9 = gcnew BankCard("3847-1888-2411-8841", "26/11", "227");
-	BankCard^ bankcard10 = gcnew BankCard("4138-9769-1598-9642", "26/08", "133");
+		BankCard^ bankcard6 = gcnew BankCard("8994-6510-6743-7576", "25/09", "753");
+		BankCard^ bankcard7 = gcnew BankCard("1827-1189-8638-1029", "23/10", "279");
+		BankCard^ bankcard8 = gcnew BankCard("7108-8824-1018-8410", "28/02", "703");
+		BankCard^ bankcard9 = gcnew BankCard("3847-1888-2411-8841", "26/11", "227");
+		BankCard^ bankcard10 = gcnew BankCard("4138-9769-1598-9642", "26/08", "133");
 
-	User2->UsersBankCards->Add(bankcard6);
-	User2->UsersBankCards->Add(bankcard7);
-	User2->UsersBankCards->Add(bankcard8);
-	User2->UsersBankCards->Add(bankcard9);
-	User2->UsersBankCards->Add(bankcard10);
+		User2->UsersBankCards->Add(bankcard6);
+		User2->UsersBankCards->Add(bankcard7);
+		User2->UsersBankCards->Add(bankcard8);
+		User2->UsersBankCards->Add(bankcard9);
+		User2->UsersBankCards->Add(bankcard10);
 
-	BankCard^ bankcard11 = gcnew BankCard("9299-2426-1945-2411", "23/09", "328");
-	BankCard^ bankcard12 = gcnew BankCard("8117-8429-1536-2545", "24/08", "456");
-	BankCard^ bankcard13 = gcnew BankCard("9884-1019-8981-1047", "28/09", "786");
-	BankCard^ bankcard14 = gcnew BankCard("9925-1395-5765-5735", "27/01", "364");
-	BankCard^ bankcard15 = gcnew BankCard("2934-2893-2116-1855", "29/05", "460");
+		BankCard^ bankcard11 = gcnew BankCard("9299-2426-1945-2411", "23/09", "328");
+		BankCard^ bankcard12 = gcnew BankCard("8117-8429-1536-2545", "24/08", "456");
+		BankCard^ bankcard13 = gcnew BankCard("9884-1019-8981-1047", "28/09", "786");
+		BankCard^ bankcard14 = gcnew BankCard("9925-1395-5765-5735", "27/01", "364");
+		BankCard^ bankcard15 = gcnew BankCard("2934-2893-2116-1855", "29/05", "460");
 
-	User3->UsersBankCards->Add(bankcard11);
-	User3->UsersBankCards->Add(bankcard12);
-	User3->UsersBankCards->Add(bankcard13);
-	User3->UsersBankCards->Add(bankcard14);
-	User3->UsersBankCards->Add(bankcard15);
+		User3->UsersBankCards->Add(bankcard11);
+		User3->UsersBankCards->Add(bankcard12);
+		User3->UsersBankCards->Add(bankcard13);
+		User3->UsersBankCards->Add(bankcard14);
+		User3->UsersBankCards->Add(bankcard15);
 
-	GenerateCaptcha();
+		GenerateCaptcha(label2);
+		GenerateCaptcha(label10);
 #pragma endregion																			
-}
+	}
 
-private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {	// виведення нової капчі
-	GenerateCaptcha();																	// виклик функція для створення капчі
-}
+	private: System::Void button1_Click_1(System::Object^ sender, System::EventArgs^ e) {	// виведення нової капчі
+		GenerateCaptcha(label2);																	// виклик функція для створення капчі
+	}
 
-	   List<User^>^ users = gcnew List<User^>();										// ліст усіх користувачів
-	   User^ FoundUser;																	// зміна за залогованого корстувача
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	try {
-		users->Add(User1);																	// користувачі додані до лісту
-		users->Add(User2);
-		users->Add(User3);
+		   List<User^>^ users = gcnew List<User^>();										// ліст усіх користувачів
+		   User^ FoundUser;																	// зміна за залогованого корстувача
+	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+		try {
+			users->Add(User1);																	// користувачі додані до лісту
+			users->Add(User2);
+			users->Add(User3);
 
-		String^ entered_login = textBox4->Text;												// ініцалізація змінних
-		String^ entered_password = textBox5->Text;
-		String^ captcha = textBox6->Text;
+			String^ entered_login = textBox4->Text;												// ініцалізація змінних
+			String^ entered_password = textBox5->Text;
+			String^ captcha = textBox6->Text;
 
-		if (entered_login == "" || entered_password == "" || captcha == "") {
-			throw gcnew FormatException();
-		}
+			if (entered_login == "" || entered_password == "" || captcha == "") {
+				throw gcnew FormatException();
+			}
 
-		bool autorized = false;																// флаг, якщо користувача знайдено
-		String^ fileName;
+			bool autorized = false;																// флаг, якщо користувача знайдено
 
-		for each (User ^ user in users) {													// перевірка даних для авторизації
-			if (user->GetLogin() == entered_login && user->GetPassword() == entered_password && label2->Text == captcha) {
-				MessageBox::Show("Ви були успішно авторизовані", "Авторизація", MessageBoxButtons::OK, MessageBoxIcon::Information);
-				autorized = true;
-				FoundUser = user;
+			for each (User ^ user in users) {													// перевірка даних для авторизації
+				if (user->GetLogin() == entered_login && user->GetPassword() == entered_password && label2->Text == captcha) {
+					MessageBox::Show("Ви були успішно авторизовані", "Авторизація", MessageBoxButtons::OK, MessageBoxIcon::Information);
+					autorized = true;
+					FoundUser = user;
 
-				FoundUser->SaveUserInFile();
-				break;
+					FoundUser->SaveUserInFile();
+					break;
+				}
+			}
+
+			if (!autorized) {																	// якщо користувача не знайдено, виводимо месседжбокс
+				MessageBox::Show("Даного користувача не знайдено\nПеревірте коректність логіну, паролю або капчі", "Авторизація", MessageBoxButtons::OK,
+					MessageBoxIcon::Exclamation);
 			}
 		}
-
-		if (!autorized) {																	// якщо користувача не знайдено, виводимо месседжбокс
-			MessageBox::Show("Даного користувача не знайдено\nПеревірте коректність логіну, паролю або капчі", "Авторизація", MessageBoxButtons::OK,
-				MessageBoxIcon::Exclamation);
+		catch (FormatException^ e) {															// виключення при неправильному форматі заповнення даних
+			MessageBox::Show("Заповніть поля", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
+
 	}
-	catch (FormatException^ e) {															// виключення при неправильному форматі заповнення даних
-		MessageBox::Show("Заповніть поля", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+		GenerateCaptcha(label10);
 	}
 
-}
+	private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
+	
+	}
 
-private: System::Void button4_Click(System::Object^ sender, System::EventArgs^ e) {
 
-}
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		textBox2->Text = GeneratePassword();													// згенерувати пароль
+	}
+
+
+
+	private: System::Void textBox2_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+		String^ password = textBox2->Text;														// введений пароль
+		String^ strength = CheckPassword(password, label11);									// перевірка паролю на складність
+		label11->Text = strength;																// виведення тексту у Label
+	}
 };
 }

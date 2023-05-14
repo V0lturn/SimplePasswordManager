@@ -30,6 +30,12 @@
     <ClCompile Include="User.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="Password.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="HashFunction.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyForm.h">
@@ -46,9 +52,6 @@
     </ClInclude>
     <ClInclude Include="Website.h">
       <Filter>Файлы заголовков\Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="HashFunction.h">
-      <Filter>Файлы заголовков</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

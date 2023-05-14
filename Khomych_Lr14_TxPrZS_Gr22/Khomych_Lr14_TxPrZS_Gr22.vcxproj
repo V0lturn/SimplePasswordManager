@@ -120,14 +120,15 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="BankCard.cpp" />
+    <ClCompile Include="HashFunction.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Password.cpp" />
     <ClCompile Include="User.cpp" />
     <ClCompile Include="Website.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BankCard.h" />
     <ClInclude Include="General.h" />
-    <ClInclude Include="HashFunction.h" />
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
