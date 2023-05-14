@@ -3,6 +3,8 @@
 #include "MyForm2.h"
 #include "MyForm3.h"
 #include "MyForm4.h"
+#include "MyForm5.h"
+
 namespace KhomychLr14TxPrZSGr22 {
 
 	using namespace System;
@@ -43,8 +45,8 @@ namespace KhomychLr14TxPrZSGr22 {
 		}
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
 	protected:
-	private: System::Windows::Forms::ToolStripMenuItem^ вебсайтиToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ банківськіКартиToolStripMenuItem;
+
+
 	private: System::Windows::Forms::ToolStripMenuItem^ безпекаДанихToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ вихідToolStripMenuItem;
 
@@ -60,6 +62,38 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::ToolStripMenuItem^ виглядToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ вебсайтиToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ колірФонуКнопокToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ колірТекстуКнопокToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ колірФонуКомірокToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ колірТекстуКомірокToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ шрифтКомірокToolStripMenuItem;
+
+
+
+	private: System::Windows::Forms::ToolStripMenuItem^ зберегтиToolStripMenuItem;
+
+
+
+
+
+
+	private: System::Windows::Forms::ColorDialog^ colorDialog1;
+	private: System::Windows::Forms::FontDialog^ fontDialog1;
+	private: System::Windows::Forms::SaveFileDialog^ saveFileDialog1;
+
+	private: System::Windows::Forms::ToolStripMenuItem^ банківськіКартиToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ колірФонуКнопокToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ колірТекстуКнопокToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ колірФонуКомірокToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ колірТекстуКомірокToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ шрифтКомірокToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ шрифтКнопокToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ шрифтКнопокToolStripMenuItem1;
 
 	private:
 		/// <summary>
@@ -74,12 +108,25 @@ namespace KhomychLr14TxPrZSGr22 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->виглядToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->вебсайтиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->колірФонуКнопокToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->колірТекстуКнопокToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->колірФонуКомірокToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->колірТекстуКомірокToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->шрифтКомірокToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->банківськіКартиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->колірФонуКнопокToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->колірТекстуКнопокToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->колірФонуКомірокToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->колірТекстуКомірокToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->шрифтКомірокToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->шрифтКнопокToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->зберегтиToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->безпекаДанихToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->вихідToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
@@ -90,9 +137,16 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->colorDialog1 = (gcnew System::Windows::Forms::ColorDialog());
+			this->fontDialog1 = (gcnew System::Windows::Forms::FontDialog());
+			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
+			this->шрифтКнопокToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -106,8 +160,8 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->menuStrip1->Font = (gcnew System::Drawing::Font(L"Cambria", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
-				this->вебсайтиToolStripMenuItem,
-					this->банківськіКартиToolStripMenuItem, this->безпекаДанихToolStripMenuItem, this->вихідToolStripMenuItem
+				this->виглядToolStripMenuItem,
+					this->зберегтиToolStripMenuItem, this->безпекаДанихToolStripMenuItem, this->вихідToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -115,24 +169,151 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
+			// виглядToolStripMenuItem
+			// 
+			this->виглядToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->вебсайтиToolStripMenuItem,
+					this->банківськіКартиToolStripMenuItem
+			});
+			this->виглядToolStripMenuItem->Name = L"виглядToolStripMenuItem";
+			this->виглядToolStripMenuItem->Size = System::Drawing::Size(84, 26);
+			this->виглядToolStripMenuItem->Text = L"Вигляд";
+			// 
 			// вебсайтиToolStripMenuItem
 			// 
+			this->вебсайтиToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
+				this->колірФонуКнопокToolStripMenuItem,
+					this->колірТекстуКнопокToolStripMenuItem, this->колірФонуКомірокToolStripMenuItem, this->колірТекстуКомірокToolStripMenuItem,
+					this->шрифтКомірокToolStripMenuItem, this->шрифтКнопокToolStripMenuItem1
+			});
 			this->вебсайтиToolStripMenuItem->Name = L"вебсайтиToolStripMenuItem";
-			this->вебсайтиToolStripMenuItem->Size = System::Drawing::Size(102, 26);
+			this->вебсайтиToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 			this->вебсайтиToolStripMenuItem->Text = L"Вебсайти";
+			// 
+			// колірФонуКнопокToolStripMenuItem
+			// 
+			this->колірФонуКнопокToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->колірФонуКнопокToolStripMenuItem->Name = L"колірФонуКнопокToolStripMenuItem";
+			this->колірФонуКнопокToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->колірФонуКнопокToolStripMenuItem->Text = L"Колір фону кнопок";
+			this->колірФонуКнопокToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::колірФонуКнопокToolStripMenuItem_Click);
+			// 
+			// колірТекстуКнопокToolStripMenuItem
+			// 
+			this->колірТекстуКнопокToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->колірТекстуКнопокToolStripMenuItem->Name = L"колірТекстуКнопокToolStripMenuItem";
+			this->колірТекстуКнопокToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->колірТекстуКнопокToolStripMenuItem->Text = L"Колір тексту кнопок";
+			this->колірТекстуКнопокToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::колірТекстуКнопокToolStripMenuItem_Click);
+			// 
+			// колірФонуКомірокToolStripMenuItem
+			// 
+			this->колірФонуКомірокToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->колірФонуКомірокToolStripMenuItem->Name = L"колірФонуКомірокToolStripMenuItem";
+			this->колірФонуКомірокToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->колірФонуКомірокToolStripMenuItem->Text = L"Колір фону комірок";
+			this->колірФонуКомірокToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::колірФонуКомірокToolStripMenuItem_Click);
+			// 
+			// колірТекстуКомірокToolStripMenuItem
+			// 
+			this->колірТекстуКомірокToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->колірТекстуКомірокToolStripMenuItem->Name = L"колірТекстуКомірокToolStripMenuItem";
+			this->колірТекстуКомірокToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->колірТекстуКомірокToolStripMenuItem->Text = L"Колір тексту комірок";
+			this->колірТекстуКомірокToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::колірТекстуКомірокToolStripMenuItem_Click);
+			// 
+			// шрифтКомірокToolStripMenuItem
+			// 
+			this->шрифтКомірокToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->шрифтКомірокToolStripMenuItem->Name = L"шрифтКомірокToolStripMenuItem";
+			this->шрифтКомірокToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->шрифтКомірокToolStripMenuItem->Text = L"Шрифт комірок";
+			this->шрифтКомірокToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::шрифтКомірокToolStripMenuItem_Click);
 			// 
 			// банківськіКартиToolStripMenuItem
 			// 
+			this->банківськіКартиToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
+				this->колірФонуКнопокToolStripMenuItem1,
+					this->колірТекстуКнопокToolStripMenuItem1, this->колірФонуКомірокToolStripMenuItem1, this->колірТекстуКомірокToolStripMenuItem1,
+					this->шрифтКомірокToolStripMenuItem1, this->шрифтКнопокToolStripMenuItem
+			});
 			this->банківськіКартиToolStripMenuItem->Name = L"банківськіКартиToolStripMenuItem";
-			this->банківськіКартиToolStripMenuItem->Size = System::Drawing::Size(166, 26);
+			this->банківськіКартиToolStripMenuItem->Size = System::Drawing::Size(224, 26);
 			this->банківськіКартиToolStripMenuItem->Text = L"Банківські карти";
+			// 
+			// колірФонуКнопокToolStripMenuItem1
+			// 
+			this->колірФонуКнопокToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->колірФонуКнопокToolStripMenuItem1->Name = L"колірФонуКнопокToolStripMenuItem1";
+			this->колірФонуКнопокToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->колірФонуКнопокToolStripMenuItem1->Text = L"Колір фону кнопок";
+			this->колірФонуКнопокToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm1::колірФонуКнопокToolStripMenuItem1_Click);
+			// 
+			// колірТекстуКнопокToolStripMenuItem1
+			// 
+			this->колірТекстуКнопокToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->колірТекстуКнопокToolStripMenuItem1->Name = L"колірТекстуКнопокToolStripMenuItem1";
+			this->колірТекстуКнопокToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->колірТекстуКнопокToolStripMenuItem1->Text = L"Колір тексту кнопок";
+			this->колірТекстуКнопокToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm1::колірТекстуКнопокToolStripMenuItem1_Click);
+			// 
+			// колірФонуКомірокToolStripMenuItem1
+			// 
+			this->колірФонуКомірокToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->колірФонуКомірокToolStripMenuItem1->Name = L"колірФонуКомірокToolStripMenuItem1";
+			this->колірФонуКомірокToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->колірФонуКомірокToolStripMenuItem1->Text = L"Колір фону комірок";
+			this->колірФонуКомірокToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm1::колірФонуКомірокToolStripMenuItem1_Click);
+			// 
+			// колірТекстуКомірокToolStripMenuItem1
+			// 
+			this->колірТекстуКомірокToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->колірТекстуКомірокToolStripMenuItem1->Name = L"колірТекстуКомірокToolStripMenuItem1";
+			this->колірТекстуКомірокToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->колірТекстуКомірокToolStripMenuItem1->Text = L"Колір тексту комірок";
+			this->колірТекстуКомірокToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm1::колірТекстуКомірокToolStripMenuItem1_Click);
+			// 
+			// шрифтКомірокToolStripMenuItem1
+			// 
+			this->шрифтКомірокToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->шрифтКомірокToolStripMenuItem1->Name = L"шрифтКомірокToolStripMenuItem1";
+			this->шрифтКомірокToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->шрифтКомірокToolStripMenuItem1->Text = L"Шрифт комірок";
+			this->шрифтКомірокToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm1::шрифтКомірокToolStripMenuItem1_Click_1);
+			// 
+			// шрифтКнопокToolStripMenuItem
+			// 
+			this->шрифтКнопокToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->шрифтКнопокToolStripMenuItem->Name = L"шрифтКнопокToolStripMenuItem";
+			this->шрифтКнопокToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->шрифтКнопокToolStripMenuItem->Text = L"Шрифт кнопок";
+			this->шрифтКнопокToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::шрифтКнопокToolStripMenuItem_Click);
+			// 
+			// зберегтиToolStripMenuItem
+			// 
+			this->зберегтиToolStripMenuItem->Name = L"зберегтиToolStripMenuItem";
+			this->зберегтиToolStripMenuItem->Size = System::Drawing::Size(100, 26);
+			this->зберегтиToolStripMenuItem->Text = L"Зберегти";
+			this->зберегтиToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::зберегтиToolStripMenuItem_Click);
 			// 
 			// безпекаДанихToolStripMenuItem
 			// 
-			this->безпекаДанихToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 0, 470, 0);
+			this->безпекаДанихToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 0, 550, 0);
 			this->безпекаДанихToolStripMenuItem->Name = L"безпекаДанихToolStripMenuItem";
 			this->безпекаДанихToolStripMenuItem->Size = System::Drawing::Size(145, 26);
 			this->безпекаДанихToolStripMenuItem->Text = L"Безпека даних";
+			this->безпекаДанихToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::безпекаДанихToolStripMenuItem_Click);
 			// 
 			// вихідToolStripMenuItem
 			// 
@@ -175,7 +356,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->textBox1->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->textBox1->Location = System::Drawing::Point(530, 531);
+			this->textBox1->Location = System::Drawing::Point(529, 540);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(158, 39);
 			this->textBox1->TabIndex = 18;
@@ -186,7 +367,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button4->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button4->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button4->Location = System::Drawing::Point(101, 516);
+			this->button4->Location = System::Drawing::Point(93, 525);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(281, 68);
 			this->button4->TabIndex = 17;
@@ -200,7 +381,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button3->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button3->Location = System::Drawing::Point(101, 414);
+			this->button3->Location = System::Drawing::Point(93, 424);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(281, 68);
 			this->button3->TabIndex = 16;
@@ -214,7 +395,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button2->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button2->Location = System::Drawing::Point(470, 414);
+			this->button2->Location = System::Drawing::Point(447, 424);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(281, 68);
 			this->button2->TabIndex = 15;
@@ -225,6 +406,18 @@ namespace KhomychLr14TxPrZSGr22 {
 			// dataGridView1
 			// 
 			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
+			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
+			this->dataGridView1->Location = System::Drawing::Point(51, 35);
+			this->dataGridView1->Name = L"dataGridView1";
 			dataGridViewCellStyle5->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
 			dataGridViewCellStyle5->BackColor = System::Drawing::SystemColors::Control;
 			dataGridViewCellStyle5->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -233,25 +426,16 @@ namespace KhomychLr14TxPrZSGr22 {
 			dataGridViewCellStyle5->SelectionBackColor = System::Drawing::SystemColors::Highlight;
 			dataGridViewCellStyle5->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
 			dataGridViewCellStyle5->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView1->Location = System::Drawing::Point(51, 35);
-			this->dataGridView1->Name = L"dataGridView1";
-			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle6->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle6->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
 			this->dataGridView1->RowHeadersWidth = 60;
 			this->dataGridView1->Size = System::Drawing::Size(700, 350);
 			this->dataGridView1->TabIndex = 1;
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->textBox2);
+			this->tabPage2->Controls->Add(this->button6);
+			this->tabPage2->Controls->Add(this->button5);
 			this->tabPage2->Controls->Add(this->button1);
 			this->tabPage2->Controls->Add(this->dataGridView2);
 			this->tabPage2->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -263,6 +447,44 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Банківські карти";
 			this->tabPage2->UseVisualStyleBackColor = true;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox2->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->textBox2->Location = System::Drawing::Point(529, 540);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(158, 39);
+			this->textBox2->TabIndex = 19;
+			// 
+			// button6
+			// 
+			this->button6->BackColor = System::Drawing::Color::PaleGreen;
+			this->button6->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button6->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button6->Location = System::Drawing::Point(93, 525);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(281, 68);
+			this->button6->TabIndex = 18;
+			this->button6->Text = L"Видалити карту";
+			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &MyForm1::button6_Click);
+			// 
+			// button5
+			// 
+			this->button5->BackColor = System::Drawing::Color::PaleGreen;
+			this->button5->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button5->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button5->Location = System::Drawing::Point(93, 424);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(281, 68);
+			this->button5->TabIndex = 17;
+			this->button5->Text = L"Додати карту";
+			this->button5->UseVisualStyleBackColor = false;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm1::button5_Click);
 			// 
 			// button1
 			// 
@@ -282,17 +504,17 @@ namespace KhomychLr14TxPrZSGr22 {
 			// 
 			this->dataGridView2->BackgroundColor = System::Drawing::Color::White;
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView2->Location = System::Drawing::Point(49, 35);
+			this->dataGridView2->Location = System::Drawing::Point(51, 35);
 			this->dataGridView2->Name = L"dataGridView2";
-			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle6->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle6->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this->dataGridView2->RowHeadersWidth = 60;
 			this->dataGridView2->Size = System::Drawing::Size(700, 350);
 			this->dataGridView2->TabIndex = 2;
@@ -307,6 +529,15 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label1->Size = System::Drawing::Size(974, 91);
 			this->label1->TabIndex = 2;
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// шрифтКнопокToolStripMenuItem1
+			// 
+			this->шрифтКнопокToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->шрифтКнопокToolStripMenuItem1->Name = L"шрифтКнопокToolStripMenuItem1";
+			this->шрифтКнопокToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->шрифтКнопокToolStripMenuItem1->Text = L"Шрифт кнопок";
+			this->шрифтКнопокToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm1::шрифтКнопокToolStripMenuItem1_Click);
 			// 
 			// MyForm1
 			// 
@@ -329,6 +560,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->tabPage2->ResumeLayout(false);
+			this->tabPage2->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -474,11 +706,139 @@ namespace KhomychLr14TxPrZSGr22 {
 			MessageBox::Show("Введіть дані", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
 		}
 	}
+
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {				// відображення діаграми для банківських карток
 		MyForm4^ fifth_form = gcnew MyForm4(CurrentUser);
 		this->Hide();
 		fifth_form->ShowDialog();
 		this->Show();
 	}
-};
+
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		try {
+			MyForm5^ sixth_form = gcnew MyForm5();													// створюємо об'єкт форми вводу даних
+			sixth_form->ShowDialog();																// виводимо другу форму
+
+			if (sixth_form->textBox1->Text == "" || sixth_form->textBox2->Text == "" || sixth_form->textBox3->Text == "") {
+				throw gcnew FormatException();
+			}
+
+			String^ CardNumber = sixth_form->textBox1->Text;										// збергіаємо значення, введені користувачем
+			String^ ExpirationDate = sixth_form->textBox2->Text;
+			String^ CVVcode = sixth_form->textBox3->Text;
+
+			BankCard^ new_bankcard = gcnew BankCard(CardNumber, ExpirationDate, CVVcode);			// створюємо об'єкт нового запису
+
+			CurrentUser->UsersBankCards->Add(new_bankcard);											// додаємо до списку
+			CreateBankCardDGW();																	// генеруємо таблицю
+		}
+		catch (FormatException^ e) {																// виключення, коли користувач не ввів дані
+			MessageBox::Show("Введіть дані", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+	}
+
+	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+		try {
+			int index = Convert::ToInt32(textBox2->Text);											// індекс елемента для видалення
+			if (textBox2->Text == "") {
+				throw gcnew FormatException();
+			}
+			CurrentUser->UsersBankCards->RemoveAt(index - 1);										// видаляємо елемент
+			CreateBankCardDGW();																	// генеруємо таблицю
+		}
+		catch (ArgumentOutOfRangeException^ e) {													// обробка виключення
+			MessageBox::Show("Спроба видалити неіснуючий запис", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+		catch (FormatException^ e) {																// виключення, коли користувач не ввів дані
+			MessageBox::Show("Введіть дані", "Помилка", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+	}
+
+	private: System::Void колірФонуКнопокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		colorDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		button2->BackColor = colorDialog1->Color;													// змінюємо колір кнопок
+		button3->BackColor = colorDialog1->Color;
+		button4->BackColor = colorDialog1->Color;
+
+	}
+
+	private: System::Void колірТекстуКнопокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		colorDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		button2->ForeColor = colorDialog1->Color;													// змінємо колір тексту кнопок
+		button3->ForeColor = colorDialog1->Color;
+		button4->ForeColor = colorDialog1->Color;
+	}
+
+	private: System::Void колірФонуКомірокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		colorDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		dataGridView1->DefaultCellStyle->BackColor = colorDialog1->Color;							// змінємо колір фону комірок
+
+	}
+
+	private: System::Void колірТекстуКомірокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		colorDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		dataGridView1->DefaultCellStyle->ForeColor = colorDialog1->Color;							// змінюємо колір тексту комірок
+	}
+
+	private: System::Void шрифтКомірокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		fontDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		dataGridView1->DefaultCellStyle->Font = fontDialog1->Font;									// змінюємо шрифт комірок
+	}
+
+	private: System::Void шрифтКнопокToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+		fontDialog1->ShowDialog();																	// виводимо меню для вибору стилю тексту
+		button2->Font = fontDialog1->Font;															// змінюємо шрифт кнопок
+		button3->Font = fontDialog1->Font;
+		button4->Font = fontDialog1->Font;
+	}
+
+	private: System::Void колірФонуКнопокToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+		colorDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		button1->BackColor = colorDialog1->Color;													// змінюємо колір кнопок
+		button5->BackColor = colorDialog1->Color;
+		button6->BackColor = colorDialog1->Color;
+	}
+
+	private: System::Void колірТекстуКнопокToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+		colorDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		button1->ForeColor = colorDialog1->Color;													// змінємо колір тексту кнопок
+		button5->ForeColor = colorDialog1->Color;
+		button6->ForeColor = colorDialog1->Color;
+	}
+
+	private: System::Void колірФонуКомірокToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+		colorDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		dataGridView2->DefaultCellStyle->BackColor = colorDialog1->Color;							// змінємо колір фону комірок
+	}
+
+	private: System::Void колірТекстуКомірокToolStripMenuItem1_Click(System::Object^ sender, System::EventArgs^ e) {
+		colorDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		dataGridView2->DefaultCellStyle->ForeColor = colorDialog1->Color;							// змінюємо колір тексту комірок
+	}
+
+	private: System::Void шрифтКомірокToolStripMenuItem1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+		fontDialog1->ShowDialog();																	// виводимо меню для вибору кольору
+		dataGridView2->DefaultCellStyle->Font = fontDialog1->Font;									// змінюємо шрифт комірокkk
+	}
+
+	private: System::Void шрифтКнопокToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		fontDialog1->ShowDialog();																	// виводимо меню для вибору стилю тексту
+		button1->Font = fontDialog1->Font;															// змінюємо шрифт кнопок
+		button5->Font = fontDialog1->Font;
+		button6->Font = fontDialog1->Font;
+	}
+
+	private: System::Void зберегтиToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		CurrentUser->SaveUserInFile();																// збереження даних користувача
+	}
+
+	private: System::Void безпекаДанихToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		MessageBox::Show("Всі дані, які ви бачите в додатку зберігаються в хешованому вигляді.\nХешування відбувається за допомогою алгоритму SM3 бібліотеки Cryptopp.\nДякуємо за довіру!",
+			"Інформація", MessageBoxButtons::OK, MessageBoxIcon::Information);
+	}
+
+	private: System::Void шрифтКнопокToolStripMenuItem1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+	};
 }
