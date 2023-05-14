@@ -11,3 +11,8 @@
 #include <iostream>
 using namespace std;
 
+System::String^ GeneratePassword();												// функція для генерації пароля		
+string ConvertStr(System::String^ str);											// функція ковертації String^ в string
+System::String^ ConvertToCliStr(std::string str);								// функція ковертації string в String^
+string Sm3(const string& input);												// функція хешування алгоритмом SM3
+System::String^ CheckPassword(System::String^ toCheck, System::Windows::Forms::Label^ label);	// перевірка паролю на складність

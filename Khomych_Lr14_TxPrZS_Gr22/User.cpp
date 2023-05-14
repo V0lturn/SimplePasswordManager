@@ -1,5 +1,4 @@
 #include "User.h"
-#include "HashFunction.h"
 using namespace System::Windows::Forms;
 
 User::User()													// реалізація конструктора без параметрів
