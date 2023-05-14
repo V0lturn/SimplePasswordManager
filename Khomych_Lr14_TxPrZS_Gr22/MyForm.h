@@ -640,9 +640,15 @@ namespace KhomychLr14TxPrZSGr22 {
 				throw NotAutorizedException("Помилка при авторизації");
 			}
 			else {
-				MyForm1^ second_form = gcnew MyForm1();
+				MyForm1^ second_form = gcnew MyForm1(FoundUser);
 				this->Hide();
-				second_form->Show();
+				second_form->ShowDialog();
+				this->Show();
+
+				textBox4->Text = "";
+				textBox5->Text = "";
+				textBox6->Text = "";
+				GenerateCaptcha(label2);
 			}
 		}
 		catch (FormatException^ e) {															// виключення при неправильному форматі заповнення даних
