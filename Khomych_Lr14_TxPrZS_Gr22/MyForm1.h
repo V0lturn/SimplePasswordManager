@@ -2,6 +2,7 @@
 #include "General.h"
 #include "MyForm2.h"
 #include "MyForm3.h"
+#include "MyForm4.h"
 namespace KhomychLr14TxPrZSGr22 {
 
 	using namespace System;
@@ -73,9 +74,9 @@ namespace KhomychLr14TxPrZSGr22 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->âåáñàéòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->áàíê³âñüê³ÊàðòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -83,6 +84,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->âèõ³äToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
@@ -91,7 +93,6 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
 			this->label1 = (gcnew System::Windows::Forms::Label());
-			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->menuStrip1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -169,6 +170,16 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage1->Text = L"Âåáñàéòè";
 			this->tabPage1->UseVisualStyleBackColor = true;
 			// 
+			// textBox1
+			// 
+			this->textBox1->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox1->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->textBox1->Location = System::Drawing::Point(530, 531);
+			this->textBox1->Name = L"textBox1";
+			this->textBox1->Size = System::Drawing::Size(158, 39);
+			this->textBox1->TabIndex = 18;
+			// 
 			// button4
 			// 
 			this->button4->BackColor = System::Drawing::Color::PaleGreen;
@@ -214,27 +225,27 @@ namespace KhomychLr14TxPrZSGr22 {
 			// dataGridView1
 			// 
 			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
-			dataGridViewCellStyle1->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle1->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle5->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle5->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle5->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle1->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle1->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle1->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+			dataGridViewCellStyle5->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle5->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle5->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle5->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(51, 35);
 			this->dataGridView1->Name = L"dataGridView1";
-			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle2->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle6->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle6->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
 			this->dataGridView1->RowHeadersWidth = 60;
 			this->dataGridView1->Size = System::Drawing::Size(700, 350);
 			this->dataGridView1->TabIndex = 1;
@@ -259,12 +270,13 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button1->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button1->Location = System::Drawing::Point(211, 425);
+			this->button1->Location = System::Drawing::Point(447, 424);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(359, 68);
+			this->button1->Size = System::Drawing::Size(281, 68);
 			this->button1->TabIndex = 16;
-			this->button1->Text = L"Àâòîðèçóâàòèñü";
+			this->button1->Text = L"Òåðì³í ä³¿ êàðò";
 			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm1::button1_Click);
 			// 
 			// dataGridView2
 			// 
@@ -272,15 +284,15 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView2->Location = System::Drawing::Point(49, 35);
 			this->dataGridView2->Name = L"dataGridView2";
-			dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle3->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle3->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle3->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle3->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle3->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
 			this->dataGridView2->RowHeadersWidth = 60;
 			this->dataGridView2->Size = System::Drawing::Size(700, 350);
 			this->dataGridView2->TabIndex = 2;
@@ -295,16 +307,6 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label1->Size = System::Drawing::Size(974, 91);
 			this->label1->TabIndex = 2;
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// textBox1
-			// 
-			this->textBox1->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->textBox1->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->textBox1->Location = System::Drawing::Point(530, 531);
-			this->textBox1->Name = L"textBox1";
-			this->textBox1->Size = System::Drawing::Size(158, 39);
-			this->textBox1->TabIndex = 18;
 			// 
 			// MyForm1
 			// 
@@ -425,12 +427,14 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Void âèõ³äToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 		this->Close();																				// çàêðèòòÿ ïîòî÷íî¿ ôîðìè
 	}
+
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {				// â³îäîáðàæåííÿ ä³àãðàìè äëÿ âåáñàéò³â
 		MyForm2^ third_form = gcnew MyForm2(CurrentUser);
 		this->Hide();
 		third_form->ShowDialog();
 		this->Show();
 	}
+
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {				// äîäàâàííÿ çàïèñó
 		try {
 			MyForm3^ fourth_form = gcnew MyForm3();													// ñòâîðþºìî îá'ºêò ôîðìè ââîäó äàíèõ
@@ -470,5 +474,11 @@ namespace KhomychLr14TxPrZSGr22 {
 			MessageBox::Show("Ââåä³òü äàí³", "Ïîìèëêà", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
 		}
 	}
-	};
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {				// â³äîáðàæåííÿ ä³àãðàìè äëÿ áàíê³âñüêèõ êàðòîê
+		MyForm4^ fifth_form = gcnew MyForm4(CurrentUser);
+		this->Hide();
+		fifth_form->ShowDialog();
+		this->Show();
+	}
+};
 }
