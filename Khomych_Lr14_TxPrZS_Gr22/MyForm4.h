@@ -87,7 +87,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->chart1->Legends->Add(legend1);
 			this->chart1->Location = System::Drawing::Point(111, 92);
 			this->chart1->Name = L"chart1";
-			this->chart1->Palette = System::Windows::Forms::DataVisualization::Charting::ChartColorPalette::Pastel;
+			this->chart1->Palette = System::Windows::Forms::DataVisualization::Charting::ChartColorPalette::Bright;
 			series1->ChartArea = L"ChartArea1";
 			series1->Font = (gcnew System::Drawing::Font(L"Cambria", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
