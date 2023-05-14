@@ -62,3 +62,25 @@ bool IsURLValid(System::String^ url)																	// реалізація перевірки пос
 	Regex^ regex = gcnew Regex(pattern);
 	return regex->IsMatch(url);																			// повертає true or false
 }
+
+bool ValidateBankCard(System::String^ cardNumber, System::String^ expirationDate, System::String^ cvvCode)
+{
+	if (!Regex::Match(cardNumber, "^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}$")->Success)					// перевірка номера карти
+	{
+		return false;
+	}
+		
+	System::DateTime expirationDateTime;																// перевірка терміну дії
+	if (!System::DateTime::TryParseExact(expirationDate, "yy/MM", System::Globalization::CultureInfo::InvariantCulture, 
+		System::Globalization::DateTimeStyles::None, expirationDateTime))
+	{
+		return false;
+	}
+
+	if (!Regex::Match(cvvCode, "^[0-9]{3}$")->Success)													// перірка CVV кода
+	{
+		return false;
+	}
+
+	return true;																						//	якщо всі перевірки прлойшли успішно, повертаємо true
+}

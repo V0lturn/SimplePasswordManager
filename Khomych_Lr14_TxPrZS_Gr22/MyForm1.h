@@ -3,6 +3,8 @@
 #include "MyForm2.h"
 #include "MyForm3.h"
 #include "MyForm4.h"
+#include "MyForm5.h"
+
 namespace KhomychLr14TxPrZSGr22 {
 
 	using namespace System;
@@ -43,8 +45,8 @@ namespace KhomychLr14TxPrZSGr22 {
 		}
 	private: System::Windows::Forms::MenuStrip^ menuStrip1;
 	protected:
-	private: System::Windows::Forms::ToolStripMenuItem^ âåáñàéòèToolStripMenuItem;
-	private: System::Windows::Forms::ToolStripMenuItem^ áàíê³âñüê³ÊàğòèToolStripMenuItem;
+
+
 	private: System::Windows::Forms::ToolStripMenuItem^ áåçïåêàÄàíèõToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ âèõ³äToolStripMenuItem;
 
@@ -60,6 +62,25 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Windows::Forms::Button^ button4;
 	private: System::Windows::Forms::Button^ button3;
 	private: System::Windows::Forms::TextBox^ textBox1;
+	private: System::Windows::Forms::Button^ button5;
+	private: System::Windows::Forms::TextBox^ textBox2;
+	private: System::Windows::Forms::Button^ button6;
+	private: System::Windows::Forms::ToolStripMenuItem^ âèãëÿäToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ âåáñàéòèToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ êîë³ğÔîíóÊíîïîêToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ êîë³ğÒåêñòóÊíîïîêToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ êîë³ğÔîíóÊîì³ğîêToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ øğèôòÊîì³ğîêToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ øğèôòêÒåêñòóToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ áàíê³âñüê³ÊàğòèToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ çáåğåãòèToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ êîë³ğÔîíóÊíîïîêToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ øğèôòÊîì³ğîêToolStripMenuItem1;
+	private: System::Windows::Forms::ToolStripMenuItem^ øğèôòÊíîïîêToolStripMenuItem;
 
 	private:
 		/// <summary>
@@ -74,12 +95,10 @@ namespace KhomychLr14TxPrZSGr22 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle7 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle8 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle9 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
-			this->âåáñàéòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->áàíê³âñüê³ÊàğòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->áåçïåêàÄàíèõToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->âèõ³äToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
@@ -90,9 +109,28 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
+			this->button6 = (gcnew System::Windows::Forms::Button());
+			this->button5 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView2 = (gcnew System::Windows::Forms::DataGridView());
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->âèãëÿäToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->âåáñàéòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->çáåğåãòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->øğèôòÊîì³ğîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->øğèôòêÒåêñòóToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->øğèôòÊîì³ğîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->øğèôòÊíîïîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -106,8 +144,8 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->menuStrip1->Font = (gcnew System::Drawing::Font(L"Cambria", 14.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(4) {
-				this->âåáñàéòèToolStripMenuItem,
-					this->áàíê³âñüê³ÊàğòèToolStripMenuItem, this->áåçïåêàÄàíèõToolStripMenuItem, this->âèõ³äToolStripMenuItem
+				this->âèãëÿäToolStripMenuItem,
+					this->çáåğåãòèToolStripMenuItem, this->áåçïåêàÄàíèõToolStripMenuItem, this->âèõ³äToolStripMenuItem
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
@@ -115,21 +153,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->menuStrip1->TabIndex = 0;
 			this->menuStrip1->Text = L"menuStrip1";
 			// 
-			// âåáñàéòèToolStripMenuItem
-			// 
-			this->âåáñàéòèToolStripMenuItem->Name = L"âåáñàéòèToolStripMenuItem";
-			this->âåáñàéòèToolStripMenuItem->Size = System::Drawing::Size(102, 26);
-			this->âåáñàéòèToolStripMenuItem->Text = L"Âåáñàéòè";
-			// 
-			// áàíê³âñüê³ÊàğòèToolStripMenuItem
-			// 
-			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Name = L"áàíê³âñüê³ÊàğòèToolStripMenuItem";
-			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Size = System::Drawing::Size(166, 26);
-			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Text = L"Áàíê³âñüê³ êàğòè";
-			// 
 			// áåçïåêàÄàíèõToolStripMenuItem
 			// 
-			this->áåçïåêàÄàíèõToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 0, 470, 0);
+			this->áåçïåêàÄàíèõToolStripMenuItem->Margin = System::Windows::Forms::Padding(0, 0, 550, 0);
 			this->áåçïåêàÄàíèõToolStripMenuItem->Name = L"áåçïåêàÄàíèõToolStripMenuItem";
 			this->áåçïåêàÄàíèõToolStripMenuItem->Size = System::Drawing::Size(145, 26);
 			this->áåçïåêàÄàíèõToolStripMenuItem->Text = L"Áåçïåêà äàíèõ";
@@ -175,7 +201,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->textBox1->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->textBox1->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->textBox1->Location = System::Drawing::Point(530, 531);
+			this->textBox1->Location = System::Drawing::Point(529, 540);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(158, 39);
 			this->textBox1->TabIndex = 18;
@@ -186,7 +212,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button4->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button4->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button4->Location = System::Drawing::Point(101, 516);
+			this->button4->Location = System::Drawing::Point(93, 525);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(281, 68);
 			this->button4->TabIndex = 17;
@@ -200,7 +226,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button3->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button3->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button3->Location = System::Drawing::Point(101, 414);
+			this->button3->Location = System::Drawing::Point(93, 424);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(281, 68);
 			this->button3->TabIndex = 16;
@@ -214,7 +240,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button2->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button2->Location = System::Drawing::Point(470, 414);
+			this->button2->Location = System::Drawing::Point(447, 424);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(281, 68);
 			this->button2->TabIndex = 15;
@@ -225,33 +251,36 @@ namespace KhomychLr14TxPrZSGr22 {
 			// dataGridView1
 			// 
 			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
-			dataGridViewCellStyle5->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle5->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle5->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle7->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle7->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle7->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle5->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle5->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle5->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle5->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle7->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle7->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle7->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle7->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(51, 35);
 			this->dataGridView1->Name = L"dataGridView1";
-			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle6->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle8->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle8->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle8->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle6->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle8->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle8->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle8->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle8->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
 			this->dataGridView1->RowHeadersWidth = 60;
 			this->dataGridView1->Size = System::Drawing::Size(700, 350);
 			this->dataGridView1->TabIndex = 1;
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->textBox2);
+			this->tabPage2->Controls->Add(this->button6);
+			this->tabPage2->Controls->Add(this->button5);
 			this->tabPage2->Controls->Add(this->button1);
 			this->tabPage2->Controls->Add(this->dataGridView2);
 			this->tabPage2->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
@@ -263,6 +292,44 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Áàíê³âñüê³ êàğòè";
 			this->tabPage2->UseVisualStyleBackColor = true;
+			// 
+			// textBox2
+			// 
+			this->textBox2->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->textBox2->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->textBox2->Location = System::Drawing::Point(529, 540);
+			this->textBox2->Name = L"textBox2";
+			this->textBox2->Size = System::Drawing::Size(158, 39);
+			this->textBox2->TabIndex = 19;
+			// 
+			// button6
+			// 
+			this->button6->BackColor = System::Drawing::Color::PaleGreen;
+			this->button6->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button6->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button6->Location = System::Drawing::Point(93, 525);
+			this->button6->Name = L"button6";
+			this->button6->Size = System::Drawing::Size(281, 68);
+			this->button6->TabIndex = 18;
+			this->button6->Text = L"Âèäàëèòè êàğòó";
+			this->button6->UseVisualStyleBackColor = false;
+			this->button6->Click += gcnew System::EventHandler(this, &MyForm1::button6_Click);
+			// 
+			// button5
+			// 
+			this->button5->BackColor = System::Drawing::Color::PaleGreen;
+			this->button5->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button5->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button5->Location = System::Drawing::Point(93, 424);
+			this->button5->Name = L"button5";
+			this->button5->Size = System::Drawing::Size(281, 68);
+			this->button5->TabIndex = 17;
+			this->button5->Text = L"Äîäàòè êàğòó";
+			this->button5->UseVisualStyleBackColor = false;
+			this->button5->Click += gcnew System::EventHandler(this, &MyForm1::button5_Click);
 			// 
 			// button1
 			// 
@@ -282,17 +349,17 @@ namespace KhomychLr14TxPrZSGr22 {
 			// 
 			this->dataGridView2->BackgroundColor = System::Drawing::Color::White;
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			this->dataGridView2->Location = System::Drawing::Point(49, 35);
+			this->dataGridView2->Location = System::Drawing::Point(51, 35);
 			this->dataGridView2->Name = L"dataGridView2";
-			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle9->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle9->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle9->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle9->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle9->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle9->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle9->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
 			this->dataGridView2->RowHeadersWidth = 60;
 			this->dataGridView2->Size = System::Drawing::Size(700, 350);
 			this->dataGridView2->TabIndex = 2;
@@ -307,6 +374,140 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label1->Size = System::Drawing::Size(974, 91);
 			this->label1->TabIndex = 2;
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// âèãëÿäToolStripMenuItem
+			// 
+			this->âèãëÿäToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->âåáñàéòèToolStripMenuItem,
+					this->áàíê³âñüê³ÊàğòèToolStripMenuItem
+			});
+			this->âèãëÿäToolStripMenuItem->Name = L"âèãëÿäToolStripMenuItem";
+			this->âèãëÿäToolStripMenuItem->Size = System::Drawing::Size(84, 26);
+			this->âèãëÿäToolStripMenuItem->Text = L"Âèãëÿä";
+			// 
+			// âåáñàéòèToolStripMenuItem
+			// 
+			this->âåáñàéòèToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
+				this->êîë³ğÔîíóÊíîïîêToolStripMenuItem,
+					this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem, this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem, this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem,
+					this->øğèôòÊîì³ğîêToolStripMenuItem, this->øğèôòêÒåêñòóToolStripMenuItem
+			});
+			this->âåáñàéòèToolStripMenuItem->Name = L"âåáñàéòèToolStripMenuItem";
+			this->âåáñàéòèToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->âåáñàéòèToolStripMenuItem->Text = L"Âåáñàéòè";
+			// 
+			// áàíê³âñüê³ÊàğòèToolStripMenuItem
+			// 
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->DropDownItems->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(6) {
+				this->êîë³ğÔîíóÊíîïîêToolStripMenuItem1,
+					this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1, this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1, this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1,
+					this->øğèôòÊîì³ğîêToolStripMenuItem1, this->øğèôòÊíîïîêToolStripMenuItem
+			});
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Name = L"áàíê³âñüê³ÊàğòèToolStripMenuItem";
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Size = System::Drawing::Size(224, 26);
+			this->áàíê³âñüê³ÊàğòèToolStripMenuItem->Text = L"Áàíê³âñüê³ êàğòè";
+			// 
+			// çáåğåãòèToolStripMenuItem
+			// 
+			this->çáåğåãòèToolStripMenuItem->Name = L"çáåğåãòèToolStripMenuItem";
+			this->çáåğåãòèToolStripMenuItem->Size = System::Drawing::Size(100, 26);
+			this->çáåğåãòèToolStripMenuItem->Text = L"Çáåğåãòè";
+			// 
+			// êîë³ğÔîíóÊíîïîêToolStripMenuItem
+			// 
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem->Name = L"êîë³ğÔîíóÊíîïîêToolStripMenuItem";
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem->Text = L"Êîë³ğ ôîíó êíîïîê";
+			// 
+			// êîë³ğÒåêñòóÊíîïîêToolStripMenuItem
+			// 
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem->Name = L"êîë³ğÒåêñòóÊíîïîêToolStripMenuItem";
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem->Text = L"Êîë³ğ òåêñòó êíîïîê";
+			// 
+			// êîë³ğÔîíóÊîì³ğîêToolStripMenuItem
+			// 
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem->Name = L"êîë³ğÔîíóÊîì³ğîêToolStripMenuItem";
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem->Text = L"Êîë³ğ ôîíó êîì³ğîê";
+			// 
+			// êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem
+			// 
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem->Name = L"êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem";
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem->Text = L"Êîë³ğ òåêñòó êîì³ğîê";
+			// 
+			// øğèôòÊîì³ğîêToolStripMenuItem
+			// 
+			this->øğèôòÊîì³ğîêToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->øğèôòÊîì³ğîêToolStripMenuItem->Name = L"øğèôòÊîì³ğîêToolStripMenuItem";
+			this->øğèôòÊîì³ğîêToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->øğèôòÊîì³ğîêToolStripMenuItem->Text = L"Øğèôò êîì³ğîê";
+			// 
+			// øğèôòêÒåêñòóToolStripMenuItem
+			// 
+			this->øğèôòêÒåêñòóToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->øğèôòêÒåêñòóToolStripMenuItem->Name = L"øğèôòêÒåêñòóToolStripMenuItem";
+			this->øğèôòêÒåêñòóToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->øğèôòêÒåêñòóToolStripMenuItem->Text = L"Øğèôòê òåêñòó";
+			// 
+			// êîë³ğÔîíóÊíîïîêToolStripMenuItem1
+			// 
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem1->Name = L"êîë³ğÔîíóÊíîïîêToolStripMenuItem1";
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->êîë³ğÔîíóÊíîïîêToolStripMenuItem1->Text = L"Êîë³ğ ôîíó êíîïîê";
+			// 
+			// êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1
+			// 
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1->Name = L"êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1";
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->êîë³ğÒåêñòóÊíîïîêToolStripMenuItem1->Text = L"Êîë³ğ òåêñòó êíîïîê";
+			// 
+			// êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1
+			// 
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1->Name = L"êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1";
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->êîë³ğÔîíóÊîì³ğîêToolStripMenuItem1->Text = L"Êîë³ğ ôîíó êîì³ğîê";
+			// 
+			// êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1
+			// 
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular,
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1->Name = L"êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1";
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->êîë³ğÒåêñòóÊîì³ğîêToolStripMenuItem1->Text = L"Êîë³ğ òåêñòó êîì³ğîê";
+			// 
+			// øğèôòÊîì³ğîêToolStripMenuItem1
+			// 
+			this->øğèôòÊîì³ğîêToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->øğèôòÊîì³ğîêToolStripMenuItem1->Name = L"øğèôòÊîì³ğîêToolStripMenuItem1";
+			this->øğèôòÊîì³ğîêToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->øğèôòÊîì³ğîêToolStripMenuItem1->Text = L"Øğèôò êîì³ğîê";
+			// 
+			// øğèôòÊíîïîêToolStripMenuItem
+			// 
+			this->øğèôòÊíîïîêToolStripMenuItem->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->øğèôòÊíîïîêToolStripMenuItem->Name = L"øğèôòÊíîïîêToolStripMenuItem";
+			this->øğèôòÊíîïîêToolStripMenuItem->Size = System::Drawing::Size(236, 24);
+			this->øğèôòÊíîïîêToolStripMenuItem->Text = L"Øğèôò êíîïîê";
 			// 
 			// MyForm1
 			// 
@@ -329,6 +530,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage1->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView1))->EndInit();
 			this->tabPage2->ResumeLayout(false);
+			this->tabPage2->PerformLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridView2))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -474,11 +676,53 @@ namespace KhomychLr14TxPrZSGr22 {
 			MessageBox::Show("Ââåä³òü äàí³", "Ïîìèëêà", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
 		}
 	}
+
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {				// â³äîáğàæåííÿ ä³àãğàìè äëÿ áàíê³âñüêèõ êàğòîê
 		MyForm4^ fifth_form = gcnew MyForm4(CurrentUser);
 		this->Hide();
 		fifth_form->ShowDialog();
 		this->Show();
 	}
+
+	private: System::Void button5_Click(System::Object^ sender, System::EventArgs^ e) {
+		try {
+			MyForm5^ sixth_form = gcnew MyForm5();													// ñòâîğşºìî îá'ºêò ôîğìè ââîäó äàíèõ
+			sixth_form->ShowDialog();																// âèâîäèìî äğóãó ôîğìó
+
+			if (sixth_form->textBox1->Text == "" || sixth_form->textBox2->Text == "" || sixth_form->textBox3->Text == "") {
+				throw gcnew FormatException();
+			}
+
+			String^ CardNumber = sixth_form->textBox1->Text;										// çáåğã³àºìî çíà÷åííÿ, ââåäåí³ êîğèñòóâà÷åì
+			String^ ExpirationDate = sixth_form->textBox2->Text;
+			String^ CVVcode = sixth_form->textBox3->Text;
+
+			BankCard^ new_bankcard = gcnew BankCard(CardNumber, ExpirationDate, CVVcode);			// ñòâîğşºìî îá'ºêò íîâîãî çàïèñó
+
+			CurrentUser->UsersBankCards->Add(new_bankcard);											// äîäàºìî äî ñïèñêó
+			CreateBankCardDGW();																	// ãåíåğóºìî òàáëèöş
+		}
+		catch (FormatException^ e) {																// âèêëş÷åííÿ, êîëè êîğèñòóâà÷ íå ââ³â äàí³
+			MessageBox::Show("Ââåä³òü äàí³", "Ïîìèëêà", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+	}
+		  
+	private: System::Void button6_Click(System::Object^ sender, System::EventArgs^ e) {
+		try {
+			int index = Convert::ToInt32(textBox2->Text);											// ³íäåêñ åëåìåíòà äëÿ âèäàëåííÿ
+			if (textBox2->Text == "") {
+				throw gcnew FormatException();
+			}
+			CurrentUser->UsersBankCards->RemoveAt(index - 1);										// âèäàëÿºìî åëåìåíò
+			CreateBankCardDGW();																	// ãåíåğóºìî òàáëèöş
+		}
+		catch (ArgumentOutOfRangeException^ e) {													// îáğîáêà âèêëş÷åííÿ
+			MessageBox::Show("Ñïğîáà âèäàëèòè íå³ñíóş÷èé çàïèñ", "Ïîìèëêà", MessageBoxButtons::OK, MessageBoxIcon::Error);
+		}
+		catch (FormatException^ e) {																// âèêëş÷åííÿ, êîëè êîğèñòóâà÷ íå ââ³â äàí³
+			MessageBox::Show("Ââåä³òü äàí³", "Ïîìèëêà", MessageBoxButtons::OK, MessageBoxIcon::Exclamation);
+		}
+	}
+
 };
 }

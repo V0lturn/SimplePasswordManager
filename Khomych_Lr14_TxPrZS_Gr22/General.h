@@ -12,14 +12,15 @@
 using namespace std;
 using namespace System::Text::RegularExpressions;
 
-System::String^ GeneratePassword();												// функція для генерації пароля		
-string ConvertStr(System::String^ str);											// функція ковертації String^ в string
-System::String^ ConvertToCliStr(std::string str);								// функція ковертації string в String^
-string Sm3(const string& input);												// функція хешування алгоритмом SM3
+System::String^ GeneratePassword();												                // функція для генерації пароля		
+string ConvertStr(System::String^ str);											                // функція ковертації String^ в string
+System::String^ ConvertToCliStr(std::string str);								                // функція ковертації string в String^
+string Sm3(const string& input);												                // функція хешування алгоритмом SM3
 System::String^ CheckPassword(System::String^ toCheck, System::Windows::Forms::Label^ label);	// перевірка паролю на складність
-bool IsURLValid(System::String^ email);                                         // Функція проверкі посилання    
+bool IsURLValid(System::String^ email);                                                         // Функція перевірки посилання    
+bool ValidateBankCard(System::String^ cardNumber, System::String^ expirationDate, System::String^ cvvCode);             // функція перевірки карти
 
-class CaptchaException : public exception                                       // Виключення коли капчу введено неправильно
+class CaptchaException : public exception                                                       // Виключення коли капчу введено неправильно
 {
 public:
     CaptchaException(const string& message) : m_message(message) {}
@@ -29,7 +30,7 @@ private:
     string m_message;
 };
 
-class NotAutorizedException : public exception                                  // Виключення коли користувача не знайдено
+class NotAutorizedException : public exception                                                  // Виключення коли користувача не знайдено
 {
 public:
     NotAutorizedException(const string& message) : m_message(message) {}

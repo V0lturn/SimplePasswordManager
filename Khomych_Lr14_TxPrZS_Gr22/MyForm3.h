@@ -72,9 +72,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label1->Font = (gcnew System::Drawing::Font(L"Cambria", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label1->ForeColor = System::Drawing::Color::White;
-			this->label1->Location = System::Drawing::Point(47, 41);
+			this->label1->Location = System::Drawing::Point(47, 35);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(144, 29);
+			this->label1->Size = System::Drawing::Size(144, 30);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"Посилання:";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -84,9 +84,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Cambria", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label2->ForeColor = System::Drawing::Color::White;
-			this->label2->Location = System::Drawing::Point(47, 94);
+			this->label2->Location = System::Drawing::Point(47, 88);
 			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(144, 29);
+			this->label2->Size = System::Drawing::Size(144, 30);
 			this->label2->TabIndex = 1;
 			this->label2->Text = L"Логін:";
 			this->label2->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -96,9 +96,9 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Cambria", 18, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->label3->ForeColor = System::Drawing::Color::White;
-			this->label3->Location = System::Drawing::Point(47, 139);
+			this->label3->Location = System::Drawing::Point(47, 142);
 			this->label3->Name = L"label3";
-			this->label3->Size = System::Drawing::Size(144, 33);
+			this->label3->Size = System::Drawing::Size(144, 30);
 			this->label3->TabIndex = 2;
 			this->label3->Text = L"Пароль:";
 			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
@@ -150,7 +150,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->button2->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
 			this->button2->ForeColor = System::Drawing::Color::RoyalBlue;
-			this->button2->Location = System::Drawing::Point(65, 209);
+			this->button2->Location = System::Drawing::Point(73, 209);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(171, 56);
 			this->button2->TabIndex = 7;
@@ -163,7 +163,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::Color::RoyalBlue;
-			this->ClientSize = System::Drawing::Size(538, 277);
+			this->ClientSize = System::Drawing::Size(538, 287);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->textBox3);
@@ -205,6 +205,5 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {		// закриття форми
 		this->Close();
 	}
-
-	};
+};
 }
