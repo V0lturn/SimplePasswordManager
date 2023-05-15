@@ -875,7 +875,7 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Void шрифтКнопокToolStripMenuItem1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	}
 
-		   bool ShowPassword = false;
+		   bool ShowPassword = true;
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {			// відображення паролів
 		if (ShowPassword) {
 			for (int i = 0; i < dataGridView1->RowCount; i++)						
@@ -893,7 +893,7 @@ namespace KhomychLr14TxPrZSGr22 {
 		ShowPassword = !ShowPassword;
 	}
 
-		   bool ShowCard = false;
+		   bool ShowCard = true;
 	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {			// відображення карт
 		if (ShowCard) {
 			for (int i = 0; i < dataGridView2->RowCount; i++)								
