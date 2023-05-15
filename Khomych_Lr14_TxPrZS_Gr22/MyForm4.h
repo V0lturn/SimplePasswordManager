@@ -131,38 +131,6 @@ namespace KhomychLr14TxPrZSGr22 {
 
 		}
 #pragma endregion
-		//private: System::Void MyForm4_Load(System::Object^ sender, System::EventArgs^ e) {
-		//	Dictionary<int, int>^ cardCountByYear = gcnew Dictionary<int, int>();	// словник буде використовуватись для збереження інформації про кількість карток за кожен рік, 
-		//	// де ключ - рік, а значення - кількість карток, які закінчуються у цьому році.
-		//	for each (BankCard ^ bankcard in CurrentUser->UsersBankCards)			// Проходимо через кожну картку користувача в листі UsersBankCards поточного користувача
-		//	{						  // Отримуємо дату закінчення терміну дії карти з об'єкту bankcard та перетворюємо її в об'єкт DateTime з використанням ParseExact()
-		//		DateTime cardDate = DateTime::ParseExact(bankcard->GetExpirationDate(), "yy/MM", System::Globalization::CultureInfo::InvariantCulture);
-		//		int year = cardDate.Year;											// Отримуємо рік з дати карти
-		//		if (cardCountByYear->ContainsKey(year))								// Перевіряємо, чи вже містить словник cardCountByYear ключ з поточним роком
-		//		{
-		//			cardCountByYear[year]++;
-		//		}
-		//		else																// Якщо ключ не існує, додаємо його в словник зі значенням 1 для цього року
-		//		{
-		//			cardCountByYear->Add(year, 1);
-		//		}
-		//	}
-
-		//	chart1->Series->Clear();												// створємо об'єкт діаграми
-		//	chart1->Series->Add("Термін дії карти");
-		//	chart1->ChartAreas[0]->AxisX->Title = "Рік";
-		//	chart1->ChartAreas[0]->AxisY->Title = "Кількість";
-		//	chart1->Series[0]->ChartType = DataVisualization::Charting::SeriesChartType::Column;
-		//	chart1->ChartAreas[0]->AxisY->Interval = 1;
-
-		//	for each (KeyValuePair<int, int> kvp in cardCountByYear)					// додаємо дані в діаграму
-		//	{																			// ітеруємось по кожній парі ключ-значення в словнику cardCountByYear
-		//		DataPoint^ point = gcnew DataPoint();									// створюємо об'єкт DataPoint для додавання до діаграми
-		//		point->AxisLabel = kvp.Key.ToString();									// встановлюємо значення мітки по осі X
-		//		point->YValues[0] = kvp.Value;											// встановлюємо значення по осі Y	
-		//		chart1->Series[0]->Points->Add(point);									// додаємо точку до серії діаграми
-		//	}
-		//}
 
 	private: System::Void MyForm4_Load(System::Object^ sender, System::EventArgs^ e) {
 		Dictionary<int, int>^ cardCountByYear = gcnew Dictionary<int, int>();			// словник буде використовуватись для збереження інформації про кількість карток за кожен рік,
