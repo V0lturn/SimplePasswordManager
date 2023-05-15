@@ -16,6 +16,9 @@
     <Filter Include="Файлы заголовков\Classes">
       <UniqueIdentifier>{915d4ca2-52c8-44c0-9c8b-4440266a1b3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Исходные файлы\Forms">
+      <UniqueIdentifier>{12cdf81e-1784-41aa-b608-f1c5a810657d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MyForm.cpp">
@@ -37,19 +40,19 @@
       <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="MyForm1.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Forms</Filter>
     </ClCompile>
     <ClCompile Include="MyForm2.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Forms</Filter>
     </ClCompile>
     <ClCompile Include="MyForm3.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Forms</Filter>
     </ClCompile>
     <ClCompile Include="MyForm4.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Forms</Filter>
     </ClCompile>
     <ClCompile Include="MyForm5.cpp">
-      <Filter>Исходные файлы</Filter>
+      <Filter>Исходные файлы\Forms</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

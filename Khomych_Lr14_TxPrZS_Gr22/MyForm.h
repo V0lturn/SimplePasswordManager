@@ -482,10 +482,10 @@ namespace KhomychLr14TxPrZSGr22 {
 		label->Text = captcha;																// виведення капчі
 	}
 
-		  User^ User1 = gcnew User("kangaroo", "hT@U4852");			// створення 3 користувачів по замовчуванню
+		  User^ User1 = gcnew User("kangaroo", "hT@U4852");									// створення 3 користувачів по замовчуванню
 		  User^ User2 = gcnew User("chimpanzee", "fN325@st");
 		  User^ User3 = gcnew User("goldfish", "4&D@Ju53");
-		  List<User^>^ users = gcnew List<User^>();										// ліст усіх користувачів
+		  List<User^>^ users = gcnew List<User^>();											// ліст усіх користувачів
 
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {		// ініціалізація даних стандартних користувачів + створення початкової капчі
 #pragma region Initialize users
@@ -691,6 +691,10 @@ namespace KhomychLr14TxPrZSGr22 {
 				MessageBox::Show("Ви були успішно зареєстровані", "Реєстрація", MessageBoxButtons::OK, MessageBoxIcon::Information);
 				User^ NewUser = gcnew User(entered_login, entered_password);						// створюємо нового користувача
 				users->Add(NewUser);
+
+				textBox1->Text = "";
+				textBox2->Text = "";
+				textBox3->Text = "";
 			}
 			else {																					// якщо капча не пройдено, викликаємо повідомлення
 				throw CaptchaException("Помилка при введені капчі");
