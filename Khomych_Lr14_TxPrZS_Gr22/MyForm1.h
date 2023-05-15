@@ -108,9 +108,9 @@ namespace KhomychLr14TxPrZSGr22 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle4 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle5 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
-			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle6 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
+			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
 			this->âèãëÿäToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->âåáñàéòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -119,6 +119,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->êîë³ðÔîíóÊîì³ðîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîë³ðÒåêñòóÊîì³ðîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->øðèôòÊîì³ðîêToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->øðèôòÊíîïîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->áàíê³âñüê³ÊàðòèToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîë³ðÔîíóÊíîïîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->êîë³ðÒåêñòóÊíîïîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -146,7 +147,6 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->colorDialog1 = (gcnew System::Windows::Forms::ColorDialog());
 			this->fontDialog1 = (gcnew System::Windows::Forms::FontDialog());
 			this->saveFileDialog1 = (gcnew System::Windows::Forms::SaveFileDialog());
-			this->øðèôòÊíîïîêToolStripMenuItem1 = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->menuStrip1->SuspendLayout();
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
@@ -234,6 +234,15 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->øðèôòÊîì³ðîêToolStripMenuItem->Size = System::Drawing::Size(236, 24);
 			this->øðèôòÊîì³ðîêToolStripMenuItem->Text = L"Øðèôò êîì³ðîê";
 			this->øðèôòÊîì³ðîêToolStripMenuItem->Click += gcnew System::EventHandler(this, &MyForm1::øðèôòÊîì³ðîêToolStripMenuItem_Click);
+			// 
+			// øðèôòÊíîïîêToolStripMenuItem1
+			// 
+			this->øðèôòÊíîïîêToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->øðèôòÊíîïîêToolStripMenuItem1->Name = L"øðèôòÊíîïîêToolStripMenuItem1";
+			this->øðèôòÊíîïîêToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
+			this->øðèôòÊíîïîêToolStripMenuItem1->Text = L"Øðèôò êíîïîê";
+			this->øðèôòÊíîïîêToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm1::øðèôòÊíîïîêToolStripMenuItem1_Click);
 			// 
 			// áàíê³âñüê³ÊàðòèToolStripMenuItem
 			// 
@@ -406,27 +415,27 @@ namespace KhomychLr14TxPrZSGr22 {
 			// dataGridView1
 			// 
 			this->dataGridView1->BackgroundColor = System::Drawing::Color::White;
-			dataGridViewCellStyle4->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle4->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle4->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle1->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle1->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle4->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle4->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle4->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle4->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+			dataGridViewCellStyle1->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle1->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle1->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle1->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
 			this->dataGridView1->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView1->Location = System::Drawing::Point(51, 35);
 			this->dataGridView1->Name = L"dataGridView1";
-			dataGridViewCellStyle5->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle5->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle5->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle2->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle2->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle2->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle5->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle5->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle5->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle5->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+			dataGridViewCellStyle2->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle2->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle2->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle2->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView1->RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
 			this->dataGridView1->RowHeadersWidth = 60;
 			this->dataGridView1->Size = System::Drawing::Size(700, 350);
 			this->dataGridView1->TabIndex = 1;
@@ -506,15 +515,15 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->dataGridView2->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
 			this->dataGridView2->Location = System::Drawing::Point(51, 35);
 			this->dataGridView2->Name = L"dataGridView2";
-			dataGridViewCellStyle6->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
-			dataGridViewCellStyle6->BackColor = System::Drawing::SystemColors::Control;
-			dataGridViewCellStyle6->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			dataGridViewCellStyle3->Alignment = System::Windows::Forms::DataGridViewContentAlignment::MiddleCenter;
+			dataGridViewCellStyle3->BackColor = System::Drawing::SystemColors::Control;
+			dataGridViewCellStyle3->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			dataGridViewCellStyle6->ForeColor = System::Drawing::SystemColors::WindowText;
-			dataGridViewCellStyle6->SelectionBackColor = System::Drawing::SystemColors::Highlight;
-			dataGridViewCellStyle6->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
-			dataGridViewCellStyle6->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
-			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+			dataGridViewCellStyle3->ForeColor = System::Drawing::SystemColors::WindowText;
+			dataGridViewCellStyle3->SelectionBackColor = System::Drawing::SystemColors::Highlight;
+			dataGridViewCellStyle3->SelectionForeColor = System::Drawing::SystemColors::HighlightText;
+			dataGridViewCellStyle3->WrapMode = System::Windows::Forms::DataGridViewTriState::True;
+			this->dataGridView2->RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
 			this->dataGridView2->RowHeadersWidth = 60;
 			this->dataGridView2->Size = System::Drawing::Size(700, 350);
 			this->dataGridView2->TabIndex = 2;
@@ -530,15 +539,6 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->label1->TabIndex = 2;
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
-			// øðèôòÊíîïîêToolStripMenuItem1
-			// 
-			this->øðèôòÊíîïîêToolStripMenuItem1->Font = (gcnew System::Drawing::Font(L"Cambria", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(204)));
-			this->øðèôòÊíîïîêToolStripMenuItem1->Name = L"øðèôòÊíîïîêToolStripMenuItem1";
-			this->øðèôòÊíîïîêToolStripMenuItem1->Size = System::Drawing::Size(236, 24);
-			this->øðèôòÊíîïîêToolStripMenuItem1->Text = L"Øðèôò êíîïîê";
-			this->øðèôòÊíîïîêToolStripMenuItem1->Click += gcnew System::EventHandler(this, &MyForm1::øðèôòÊíîïîêToolStripMenuItem1_Click);
-			// 
 			// MyForm1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -551,7 +551,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->MainMenuStrip = this->menuStrip1;
 			this->Name = L"MyForm1";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
-			this->Text = L"MyForm1";
+			this->Text = L"Ñòîð³íêà êîðèñòóâà÷à";
 			this->Load += gcnew System::EventHandler(this, &MyForm1::MyForm1_Load);
 			this->menuStrip1->ResumeLayout(false);
 			this->menuStrip1->PerformLayout();
