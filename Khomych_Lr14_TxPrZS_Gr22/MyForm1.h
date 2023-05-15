@@ -94,6 +94,8 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Windows::Forms::ToolStripMenuItem^ шрифтКомірокToolStripMenuItem1;
 	private: System::Windows::Forms::ToolStripMenuItem^ шрифтКнопокToolStripMenuItem;
 	private: System::Windows::Forms::ToolStripMenuItem^ шрифтКнопокToolStripMenuItem1;
+	private: System::Windows::Forms::Button^ button7;
+	private: System::Windows::Forms::Button^ button8;
 
 	private:
 		/// <summary>
@@ -108,6 +110,7 @@ namespace KhomychLr14TxPrZSGr22 {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm1::typeid));
 			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle1 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle2 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
 			System::Windows::Forms::DataGridViewCellStyle^ dataGridViewCellStyle3 = (gcnew System::Windows::Forms::DataGridViewCellStyle());
@@ -132,12 +135,14 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->вихідToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->tabControl1 = (gcnew System::Windows::Forms::TabControl());
 			this->tabPage1 = (gcnew System::Windows::Forms::TabPage());
+			this->button7 = (gcnew System::Windows::Forms::Button());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
 			this->button4 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->dataGridView1 = (gcnew System::Windows::Forms::DataGridView());
 			this->tabPage2 = (gcnew System::Windows::Forms::TabPage());
+			this->button8 = (gcnew System::Windows::Forms::Button());
 			this->textBox2 = (gcnew System::Windows::Forms::TextBox());
 			this->button6 = (gcnew System::Windows::Forms::Button());
 			this->button5 = (gcnew System::Windows::Forms::Button());
@@ -340,11 +345,12 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabControl1->Location = System::Drawing::Point(79, 179);
 			this->tabControl1->Name = L"tabControl1";
 			this->tabControl1->SelectedIndex = 0;
-			this->tabControl1->Size = System::Drawing::Size(807, 660);
+			this->tabControl1->Size = System::Drawing::Size(832, 660);
 			this->tabControl1->TabIndex = 1;
 			// 
 			// tabPage1
 			// 
+			this->tabPage1->Controls->Add(this->button7);
 			this->tabPage1->Controls->Add(this->textBox1);
 			this->tabPage1->Controls->Add(this->button4);
 			this->tabPage1->Controls->Add(this->button3);
@@ -355,10 +361,24 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage1->Location = System::Drawing::Point(4, 31);
 			this->tabPage1->Name = L"tabPage1";
 			this->tabPage1->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage1->Size = System::Drawing::Size(799, 625);
+			this->tabPage1->Size = System::Drawing::Size(824, 625);
 			this->tabPage1->TabIndex = 0;
 			this->tabPage1->Text = L"Вебсайти";
 			this->tabPage1->UseVisualStyleBackColor = true;
+			// 
+			// button7
+			// 
+			this->button7->BackColor = System::Drawing::Color::PaleGreen;
+			this->button7->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button7->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button7.Image")));
+			this->button7->Location = System::Drawing::Point(757, 71);
+			this->button7->Name = L"button7";
+			this->button7->Size = System::Drawing::Size(61, 44);
+			this->button7->TabIndex = 19;
+			this->button7->UseVisualStyleBackColor = false;
+			this->button7->Click += gcnew System::EventHandler(this, &MyForm1::button7_Click);
 			// 
 			// textBox1
 			// 
@@ -442,6 +462,7 @@ namespace KhomychLr14TxPrZSGr22 {
 			// 
 			// tabPage2
 			// 
+			this->tabPage2->Controls->Add(this->button8);
 			this->tabPage2->Controls->Add(this->textBox2);
 			this->tabPage2->Controls->Add(this->button6);
 			this->tabPage2->Controls->Add(this->button5);
@@ -452,10 +473,24 @@ namespace KhomychLr14TxPrZSGr22 {
 			this->tabPage2->Location = System::Drawing::Point(4, 31);
 			this->tabPage2->Name = L"tabPage2";
 			this->tabPage2->Padding = System::Windows::Forms::Padding(3);
-			this->tabPage2->Size = System::Drawing::Size(799, 625);
+			this->tabPage2->Size = System::Drawing::Size(824, 625);
 			this->tabPage2->TabIndex = 1;
 			this->tabPage2->Text = L"Банківські карти";
 			this->tabPage2->UseVisualStyleBackColor = true;
+			// 
+			// button8
+			// 
+			this->button8->BackColor = System::Drawing::Color::PaleGreen;
+			this->button8->Font = (gcnew System::Drawing::Font(L"Cambria", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(204)));
+			this->button8->ForeColor = System::Drawing::Color::RoyalBlue;
+			this->button8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"button8.Image")));
+			this->button8->Location = System::Drawing::Point(757, 71);
+			this->button8->Name = L"button8";
+			this->button8->Size = System::Drawing::Size(61, 44);
+			this->button8->TabIndex = 20;
+			this->button8->UseVisualStyleBackColor = false;
+			this->button8->Click += gcnew System::EventHandler(this, &MyForm1::button8_Click);
 			// 
 			// textBox2
 			// 
@@ -602,7 +637,7 @@ namespace KhomychLr14TxPrZSGr22 {
 
 					dataGridView1->Rows[i]->Cells[0]->Value = website->GetLink();					// заповнення комірок таблиці даними
 					dataGridView1->Rows[i]->Cells[1]->Value = website->GetLogin();
-					dataGridView1->Rows[i]->Cells[2]->Value = website->GetPassword();
+					dataGridView1->Rows[i]->Cells[2]->Value = "***********";
 				}
 			}
 			catch (ArgumentOutOfRangeException^ e) {												// обробка виключення
@@ -635,15 +670,15 @@ namespace KhomychLr14TxPrZSGr22 {
 					row->Height = 60;
 				}
 
-				for (int i = 0; i < dataGridView2->RowCount; i++)									// назви для рядків
+				for (int i = 0; i < dataGridView2->RowCount; i++)
 				{
 					dataGridView2->Rows[i]->HeaderCell->Value = "#" + (i + 1).ToString();
 
-					BankCard^ bankcard = CurrentUser->UsersBankCards[i];							// отримання елемента списка
+					BankCard^ bankcard = CurrentUser->UsersBankCards[i];
 
-					dataGridView2->Rows[i]->Cells[0]->Value = bankcard->GetCardNumber();			// заповнення комірок таблиці даними
-					dataGridView2->Rows[i]->Cells[1]->Value = bankcard->GetExpirationDate();
-					dataGridView2->Rows[i]->Cells[2]->Value = bankcard->GetCVV();
+					dataGridView2->Rows[i]->Cells[0]->Value = "****-****-****-" + bankcard->GetCardNumber()->Substring(bankcard->GetCardNumber()->Length - 4); // заповнення комірок таблиці даними
+					dataGridView2->Rows[i]->Cells[1]->Value = "*****";
+					dataGridView2->Rows[i]->Cells[2]->Value = "***";
 				}
 			}
 			catch (ArgumentOutOfRangeException^ e) {												// обробка виключення
@@ -840,5 +875,47 @@ namespace KhomychLr14TxPrZSGr22 {
 	private: System::Void шрифтКнопокToolStripMenuItem1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	}
 
-	};
+		   bool ShowPassword = false;
+	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e) {			// відображення паролів
+		if (ShowPassword) {
+			for (int i = 0; i < dataGridView1->RowCount; i++)						
+			{
+				Website^ website = CurrentUser->UserWebsites[i];								// отримання елемента списка
+				dataGridView1->Rows[i]->Cells[2]->Value = website->GetPassword();				// заповнення комірок таблиці даними
+			}
+		}
+		else {
+			for (int i = 0; i < dataGridView1->RowCount; i++)
+			{
+				dataGridView1->Rows[i]->Cells[2]->Value = "***********";
+			}
+		}
+		ShowPassword = !ShowPassword;
+	}
+
+		   bool ShowCard = false;
+	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e) {			// відображення карт
+		if (ShowCard) {
+			for (int i = 0; i < dataGridView2->RowCount; i++)								
+			{
+				BankCard^ bankcard = CurrentUser->UsersBankCards[i];							// отримання елемента списка
+
+				dataGridView2->Rows[i]->Cells[0]->Value = bankcard->GetCardNumber();			// заповнення комірок таблиці даними
+				dataGridView2->Rows[i]->Cells[1]->Value = bankcard->GetExpirationDate();
+				dataGridView2->Rows[i]->Cells[2]->Value = bankcard->GetCVV();
+			}
+		}
+		else {
+			for (int i = 0; i < dataGridView2->RowCount; i++)
+			{
+				BankCard^ bankcard = CurrentUser->UsersBankCards[i];
+
+				dataGridView2->Rows[i]->Cells[0]->Value = "****-****-****-" + bankcard->GetCardNumber()->Substring(bankcard->GetCardNumber()->Length - 4); // заповнення комірок таблиці даними
+				dataGridView2->Rows[i]->Cells[1]->Value = "*****";
+				dataGridView2->Rows[i]->Cells[2]->Value = "***";
+			}
+		}
+		ShowCard = !ShowCard;
+	}
+};
 }
