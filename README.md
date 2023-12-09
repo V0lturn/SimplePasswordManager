@@ -1,5 +1,5 @@
 # Lab14
 ### Before starting the project in Package Manager Console
-> add-migrion *name*
+> add-migration *name*
 
 > update-database
